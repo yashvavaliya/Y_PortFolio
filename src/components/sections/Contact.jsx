@@ -8,7 +8,7 @@ function Contact() {
   return (
     <section
       id="contact"
-      className="mt-16 pt-12 px-6 lg:px-24 bg-orange-500 dark:bg-zinc-900"
+      className="mt-16 pt-12 pb-12 px-6 lg:px-24 bg-orange-500 dark:bg-zinc-900"
     >
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-1">
         {/* Left Side: Image */}
@@ -17,8 +17,8 @@ function Contact() {
           <div className="absolute top-0 left-0 w-80 h-80 bg-yellow-300 opacity-20 rounded-full blur-3xl animate-pulse shadow-lg"></div>
           
           <img
-            src="/public/contact.png" // Replace with the actual image path
-            alt="Contact Illustration"
+            src={user_info.emoji.footer}
+            alt={user_info.emoji.footeralt}
             className="w-60 h-auto relative"
           />
         </div>

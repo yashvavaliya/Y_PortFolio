@@ -108,6 +108,15 @@ const info = {
     },
   ],
 
+   // ============ LOGO DETAILS ============
+  emoji: {
+    img: "/yash-leptopboy.png",
+    alt: "yash-project",
+    footer: "/footer-robo.png",
+    footeralt: "footer-robo",
+  },
+
+
   // ============ EDUCATION ============
   education: [
     {
