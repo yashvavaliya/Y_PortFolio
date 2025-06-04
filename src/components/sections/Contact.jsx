@@ -1,14 +1,14 @@
 import user_info from "../../data/user_info.js";
 
-import { FaSquareXTwitter, FaLinkedin } from "react-icons/fa6";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Contact() {
   return (
     <section
       id="contact"
-      className="mt-16 pt-12 pb-12 px-6 lg:px-24 bg-orange-500 dark:bg-zinc-900"
+      className="mt-16 pt-12 pb-12 px-6 lg:px-24 bg-orange-500 dark:bg-orange-500"
     >
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-1">
         {/* Left Side: Image */}
@@ -26,9 +26,9 @@ function Contact() {
         {/* Right Side: Content */}
         <div className="flex-1 mt-10">
           {/* =========== TITLE =========== */}
-          <h4 className="text-3xl font-bold text-zinc-900 dark:text-zinc-100">
+          <h4 className="text-3xl font-bold text-zinc-900 dark:text-zinc-900">
             Let&apos;s Get in Touch:{" "}
-            <span className="text-white dark:text-orange-500">
+            <span className="text-white">
               Ways to Connect with Me
             </span>
           </h4>
@@ -42,12 +42,20 @@ function Contact() {
 
           {/* =========== LINKS =========== */}
           <div className="mt-5 flex flex-wrap gap-6">
-            {/* =========== FACEBOOK =========== */}
+            {/* =========== EMAIL =========== */}
             <a
-              href={user_info.socials.facebook}
+              href={`mailto:${user_info.socials.email}`}
               className="flex items-center justify-center w-14 h-14 rounded-full bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-orange-500 hover:dark:bg-orange-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
             >
-              <FaFacebook className="text-2xl" />
+              <MdEmail className="text-2xl" />      
+            </a>
+
+            {/* =========== GITHUB =========== */}
+            <a
+              href={user_info.socials.github}
+              className="flex items-center justify-center w-14 h-14 rounded-full bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-orange-500 hover:dark:bg-orange-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
+            >
+              <FaGithub className="text-2xl" />
             </a>
 
             {/* =========== INSTAGRAM =========== */}
@@ -64,14 +72,6 @@ function Contact() {
               className="flex items-center justify-center w-14 h-14 rounded-full bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-orange-500 hover:dark:bg-orange-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
             >
               <FaLinkedin className="text-2xl" />      
-            </a>
-
-            {/* =========== EMAIL =========== */}
-            <a
-              href={user_info.socials.linkedin}
-              className="flex items-center justify-center w-14 h-14 rounded-full bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-orange-500 hover:dark:bg-orange-500 hover:text-white transition-all duration-300 transform hover:scale-110 shadow-md hover:shadow-lg"
-            >
-              <MdEmail className="text-2xl" />      
             </a>
 
 

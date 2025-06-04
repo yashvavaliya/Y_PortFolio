@@ -22,11 +22,12 @@ const info = {
 
   // ============ SOCIAL LINKS ============
   socials: {
-    twitter: "https://twitter.com/dsbalico",
-    github: "https://github.com/dsbalico",
-    linkedin: "https://linkedin.com/in/dsbalico",
-    instagram: "https://instagram.com/dsbalico",
-    facebook: "https://facebook.com/dsbalico",
+    // twitter: "https://twitter.com/dsbalico",
+    github: "https://github.com/yash131120",
+    linkedin: "https://www.linkedin.com/in/yash-vavaliya-b84427207/",
+    instagram: "https://www.instagram.com/yashvavaliya/",
+    // facebook: "https://facebook.com/dsbalico",
+    email: "vavaliyayash@gmail.com"
   },
 
   // ============ aboutS ============
