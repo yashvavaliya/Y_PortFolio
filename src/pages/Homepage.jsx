@@ -39,32 +39,32 @@ function Homepage() {
     };
   }, []);
 
-  // if (isLoading) {
-  //   return (
-  //     <div className="flex flex-col justify-center items-center h-screen bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
-  //       <div className="text-center">
-  //         <p className="mt-4 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-orange-500">
-  //           {messages[currentMessageIndex]}
-  //         </p>
-  //         {/* Progress Line */}
-  //         <div className="w-full mt-4">
-  //           <div className="h-2 bg-gray-300 dark:bg-gray-700 w-[250px] mx-auto rounded-full">
-  //             <div
-  //               className="h-2 bg-orange-500 transition-all duration-1000 rounded-full"
-  //               style={{
-  //                 width: `${
-  //                   ((currentMessageIndex + 1) / messages.length) * 100
-  //                 }%`,
-  //               }}
-  //             />
-  //           </div>
-  //           {/* <CarAnimation/>  */}
-  //         </div>
-  //       </div>
+  if (isLoading) {
+    return (
+      <div className="flex flex-col justify-center items-center h-screen bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
+        <div className="text-center">
+          <p className="mt-4 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-orange-500">
+            {messages[currentMessageIndex]}
+          </p>
+          {/* Progress Line */}
+          <div className="w-full mt-4">
+            <div className="h-2 bg-gray-300 dark:bg-gray-700 w-[250px] mx-auto rounded-full">
+              <div
+                className="h-2 bg-orange-500 transition-all duration-1000 rounded-full"
+                style={{
+                  width: `${
+                    ((currentMessageIndex + 1) / messages.length) * 100
+                  }%`,
+                }}
+              />
+            </div>
+            {/* <CarAnimation/>  */}
+          </div>
+        </div>
         
-  //     </div>
-  //   );
-  // }
+      </div>
+    );
+  }
 
   return (
     <div className="bg-white dark:bg-zinc-900">
