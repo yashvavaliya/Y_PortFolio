@@ -13,6 +13,7 @@ import Footer from "../components/sections/Footer.jsx";
 import EducationAndExperience from "../components/sections/EducationAndExperience.jsx";
 import Skills from "../components/sections/Skills.jsx";
 // import CarAnimation from "../components/CarAnimation.jsx";
+import DisplayLoad from "./DisplayLoad.jsx";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
@@ -20,8 +21,7 @@ function Homepage() {
 
   const [isLoading, setIsLoading] = useState(true); // State to control loading
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0); // State to control message display
-  const messages = ["Hello! 👦", "Welcome ☺️", "नमस्ते 👋", "કેમ છો? 🤝"]; // Messages to display during loading
-
+  const messages = ["Hello! 👦","કેમ છો? 🤝","Welcome ☺️","नमस्ते 👋","GUTEN TAG"]; // Messages to display during loading
   useEffect(() => {
     // Cycle through messages every 1 second
     const messageInterval = setInterval(() => {
@@ -41,28 +41,10 @@ function Homepage() {
 
   if (isLoading) {
     return (
-      <div className="flex flex-col justify-center items-center h-screen bg-zinc-100 dark:bg-zinc-900 overflow-hidden">
-        <div className="text-center">
-          <p className="mt-4 text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-4xl font-bold text-orange-500">
-            {messages[currentMessageIndex]}
-          </p>
-          {/* Progress Line */}
-          <div className="w-full mt-4">
-            <div className="h-2 bg-gray-300 dark:bg-gray-700 w-[250px] mx-auto rounded-full">
-              <div
-                className="h-2 bg-orange-500 transition-all duration-1000 rounded-full"
-                style={{
-                  width: `${
-                    ((currentMessageIndex + 1) / messages.length) * 100
-                  }%`,
-                }}
-              />
-            </div>
-            {/* <CarAnimation/>  */}
-          </div>
-        </div>
-        
-      </div>
+      <DisplayLoad
+        message={messages[currentMessageIndex]}
+        progress={((currentMessageIndex + 1) / messages.length) * 100}
+      />
     );
   }
 
