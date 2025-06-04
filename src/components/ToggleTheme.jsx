@@ -1,4 +1,5 @@
 import { CgDarkMode } from "react-icons/cg";
+import user_info from "../data/user_info.js";
 
 function ToggleTheme({ switchTheme }) {
     return (
@@ -8,13 +9,13 @@ function ToggleTheme({ switchTheme }) {
 
             {/* Logo */}
             <img
-                src="./../../../public/logo/yblack.png" // Light mode logo
-                alt="Logo"
+                src={user_info.logo.photow}
+                alt={user_info.logo.altw}
                 className="w-8 h-8 absolute top-5 left-5 dark:hidden" // Hidden in dark mode
             />
             <img
-                src="./../../../public/logo/yorange.png" // Dark mode logo
-                alt="Logo"
+                src={user_info.logo.photob}
+                alt={user_info.logo.altb}
                 className="w-8 h-8 absolute top-5 left-5 hidden dark:block" // Visible only in dark mode
             />
             {/* Orange Dot */}

@@ -1,4 +1,13 @@
 const info = {
+
+  // ============ LOGO DETAILS ============
+  logo: {
+    photow: "/logo/yblack.png",
+    altw: "yashlogo",
+    photob: "/logo/yorange.png",
+    altb: "yashlogo",
+  },
+
   // ============ MAIN DETAILS ============
   main: {
     name: "YASH VAVALIYA",
