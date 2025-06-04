@@ -5,8 +5,8 @@ const info = {
     description:
       "A passionate and self-motivated IT student seeking a web development internship to apply academic knowledge, gain industry experience, and contribute to real-world projects. Proficient in modern web technologies and eager to explore new tools and frameworks. Enthusiastic about problem-solving, continuous learning, and working in collaborative environments.",
     role: "Developer",
-    photo: "/public/first.png",
-    hoverphoto: "/public/hoverfirst.jpg",
+    photo: "first.png",
+    hoverphoto: "hoverfirst.jpg",
     email: "danielshan.balico@gmail.com",
     roles: ["Reader", "Programmer", "Designer"], // Add roles here
   },
@@ -42,7 +42,7 @@ const info = {
       description:
         "AI Trip Planner is a web app that uses artificial intelligence to help users plan their trips more efficiently.",
       technologies: "React Native, TypeScript, Gemini, Firebase, Google Maps API",
-      img: "/public/project/AI_Trip_Planner1.jpg",
+      img: "/project/AI_Trip_Planner1.jpg",
       github: "https://github.com/dsbalico/pseudocode-to-c",
       link: "https://pseudocode-to-c.netlify.app/",
     },
@@ -52,7 +52,7 @@ const info = {
       description:
         "Developed to learn full-stack web development using Nuxt3, Express, and PostgreSQL in fulfillment of my internship requirements.",
       technologies: "Nuxt, Tailwind, Express, PostgreSQL",
-      img: "/public/project/p2.jpg",
+      img: "/project/p2.jpg",
       github: "https://github.com/dsbalico/YouShare",
       link: "https://github.com/dsbalico/YouShare",
     },
@@ -62,7 +62,7 @@ const info = {
       description:
         "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
       technologies: "React, Tailwind, Tensorflow",
-      img: "/public/project/p3.jpg",
+      img: "/project/p3.jpg",
       github: "https://github.com/dsbalico/letter-digit-shape-classification",
       link: "https://letterdigitshape-classification.netlify.app/",
     },
@@ -72,7 +72,7 @@ const info = {
       description:
         "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
       technologies: "React, Tailwind, Firebase",
-      img: "/public/project/p4.jpg",
+      img: "/project/p4.jpg",
       github: "https://github.com/dsbalico/chatroom",
       link: "https://thechatroom.netlify.app/",
     },
@@ -82,7 +82,7 @@ const info = {
       description:
         "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
       technologies: "React, Tailwind, TypeScript",
-      img: "/public/project/p5.jpg",
+      img: "/project/p5.jpg",
       github:
         "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
       link: "https://sudoku-solver-sa.netlify.app/",

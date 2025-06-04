@@ -87,7 +87,7 @@ function EducationAndExperience() {
                         <FaLaptopCode className="text-black-500 dark:text-white absolute right-5 top-3 text-4xl" />
                       )}
 
-                      <div className="flex justify-center items-center h-full bg-gray-100 p-6 dark:bg-neutral-900">
+                      <div className="flex justify-center items-center h-full bg-gray-200 p-6 dark:bg-neutral-900">
                         <div className="hs-tooltip [--placement:bottom] inline-block">
                           <a
                             href={cert.link}
