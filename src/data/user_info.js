@@ -10,7 +10,7 @@ const info = {
 
   // ============ MAIN DETAILS ============
   main: {
-    name: "YASH VAVALIYA",
+    name: "YASH",
     description:
       "A passionate and self-motivated IT student seeking a web development internship to apply academic knowledge, gain industry experience, and contribute to real-world projects. Proficient in modern web technologies and eager to explore new tools and frameworks. Enthusiastic about problem-solving, continuous learning, and working in collaborative environments.",
     role: "Developer",
