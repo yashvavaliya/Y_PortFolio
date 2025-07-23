@@ -13,7 +13,7 @@ function About() {
             <div key={index} className="mb-8">
               <div className="flex gap-x-3 relative group rounded-lg">
                 {/* Vertical Line and Circle */}
-                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-1/2 after:w-px after:-translate-x-1/2 after:bg-zinc-300 group-hover:after:bg-zinc-500 dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600">
+                <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-1/2 after:w-px after:-translate-x-1/2 after:bg-zinc-500 group-hover:after:bg-black dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600">
                   <div className="relative z-10 size-7 flex justify-center items-center">
                     <div className="size-[450%] rounded-full bg-white border-2 border-orange-300 group-hover:border-orange-500 dark:bg-black dark:border-zinc-600 dark:group-hover:border-orange-500"></div>
                   </div>
@@ -25,7 +25,7 @@ function About() {
                     rel="noopener noreferrer"
                     className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center items-center w-20 h-20 rounded-full bg-orange-500 hover:bg-orange-200 border-2 border-black dark:border-orange-500"
                   >
-                    <span className="text-white dark:group-hover:text-black font-bold">
+                    <span className="text-white hover:text-black dark:group-hover:text-black font-bold text-3xl" style={{ fontFamily: "'Amatic SC', cursive" }}>
                       RESUME
                     </span>
                   </a>
