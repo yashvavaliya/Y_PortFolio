@@ -65,7 +65,7 @@ function About() {
           <h4 className="text-lg sm:text-xl md:text-2xl text-orange-500 mb-4 font-bold text-right pt-8">
             About Me
           </h4>
-          <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[400px] h-[70vw] max-h-[400px] sm:max-h-[500px] md:max-h-[550px] overflow-hidden transform group rounded-xl shadow-md">
+          <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[350px] h-[70vw] max-h-[400px] sm:max-h-[500px] md:max-h-[500px] overflow-hidden transform group rounded-xl shadow-md">
             {/* Image with shadow on hover */}
             <img
               src={user_info.about[0].photoabout}
