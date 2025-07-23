@@ -54,9 +54,9 @@ function Homepage() {
         <ToggleTheme switchTheme={switchTheme} />
 
         <Hero />
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block"> */}
           <MacbookMockup />
-        </div>
+        {/* </div> */}
         <About/>
         <EducationAndExperience />
         <Skills />
