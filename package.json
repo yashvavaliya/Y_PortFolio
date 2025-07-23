@@ -11,8 +11,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@react-three/drei": "^10.5.1",
-    "@react-three/fiber": "^9.2.0",
+    
     "lucide-react": "^0.395.0",
     "preline": "^2.3.0",
     "react": "^18.2.0",
@@ -21,8 +20,8 @@
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.3",
     "react-slick": "^0.30.3",
-    "slick-carousel": "^1.8.1",
-    "three": "^0.178.0"
+    "slick-carousel": "^1.8.1"
+    
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
