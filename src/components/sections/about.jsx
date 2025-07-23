@@ -8,7 +8,7 @@ function About() {
         className="flex flex-col md:flex-row gap-4 md:gap-4 justify-between items-center md:items-start w-full"
       >
         {/* =========== About Section =========== */}
-        <div className="w-full md:w-[60%] flex flex-col order-1">
+        <div className="w-full md:w-[65%] flex flex-col order-1">
           {user_info.about.map((ab, index) => (
             <div key={index} className="mb-8">
               <div className="flex gap-x-3 relative group rounded-lg">
@@ -62,10 +62,10 @@ function About() {
         {/* =========== Image Section with Title =========== */}
         <div className="w-full md:w-[40%] flex flex-col items-center md:items-end mb-4 md:mb-0 order-2 md:order-2">
           {/* Title Above Image */}
-          <h4 className="text-lg sm:text-xl md:text-2xl text-orange-500 mb-4 font-bold text-right">
+          <h4 className="text-lg sm:text-xl md:text-2xl text-orange-500 mb-4 font-bold text-right pt-8">
             About Me
           </h4>
-          <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[400px] h-[60vw] max-h-[350px] sm:max-h-[500px] md:max-h-[550px] overflow-hidden transform group rounded-xl shadow-md">
+          <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[400px] h-[50vw] max-h-[350px] sm:max-h-[500px] md:max-h-[550px] overflow-hidden transform group rounded-xl shadow-md">
             {/* Image with shadow on hover */}
             <img
               src={user_info.about[0].photoabout}
