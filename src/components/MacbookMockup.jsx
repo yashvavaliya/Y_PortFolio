@@ -1,9 +1,8 @@
-import React from "react";
 import "././styles/mockup.css";
 
 const MacbookMockup = () => {
   return (
-    <section className="mt-10 pt-10 px-20 lg:px-24" >
+    <section className="mt-10 px-20 lg:px-24" >
     <div className="container">
       <div className="mockup mockup-macbook loaded opened">
         <div className="part top">
