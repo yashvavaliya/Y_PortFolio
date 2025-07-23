@@ -33,16 +33,17 @@ const info = {
   // ============ aboutS ============
   about: [
     {
+      photoabout: "yashabout.jpg",
       title: "About Me",
       description:
-        " Hi, I'm Yash Vavaliya, a passionate and driven Software Developer based in Gujarat, India, currently pursuing my B.Tech in Computer Engineering.",
+        " Hi, I'm Yash Vavaliya, a passionate and driven Software Developer based in Gujarat, India. currently pursuing my B.Tech in Computer Engineering.",
       description2:
         "I specialize in building scalable web and mobile applications with a strong focus on clean architecture, performance, and user-centric design. My technical toolbox includes technologies like React Native, Firebase, Google Maps API, PHP, MySQL, and JavaScript, which I use to craft seamless digital experiences.",
       description3:
-        "I'm adaptable, quick to learn new technologies, and thrive in collaborative environments where I can contribute to real-world solutions. My approach blends functionality with efficiency—writing code that is modular, reusable, and easy to maintain.",
+        "I'm adaptable, quick to learn new technologies, and thrive in collaborative environments where I can contribute to real-world solutions. My approach blends functionality with efficiency-writing code that is modular, reusable, and easy to maintain.",
       description4:
         "I'm always open to opportunities that challenge me to grow, build, and innovate. Let's connect and build something great together.",
-    },
+    },   
   ],
 
   // ============ PROJECTS ============

@@ -2,13 +2,13 @@ import user_info from "../../data/user_info.js";
 
 function About() {
   return (
-    <section className="mt-20 mx-4 lg:mx-20">
+    <section className="mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto">
       <div
         id="education-and-experience"
-        className="flex flex-col md:flex-row gap-8 md:gap-4 justify-between"
+        className="flex flex-col md:flex-row gap-4 md:gap-4 justify-between items-center md:items-start w-full"
       >
         {/* =========== About Section =========== */}
-        <div className="w-full md:w-[60%]">
+        <div className="w-full md:w-[60%] flex flex-col order-1">
           {user_info.about.map((ab, index) => (
             <div key={index} className="mb-8">
               <div className="flex gap-x-3 relative group rounded-lg">
@@ -25,7 +25,9 @@ function About() {
                     rel="noopener noreferrer"
                     className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center items-center w-20 h-20 rounded-full bg-orange-500 hover:bg-orange-200 border-2 border-black dark:border-orange-500"
                   >
-                    <span className="text-white dark:group-hover:text-black font-bold">RESUME</span>
+                    <span className="text-white dark:group-hover:text-black font-bold">
+                      RESUME
+                    </span>
                   </a>
 
                   {/* Short Line After Circle */}
@@ -38,7 +40,7 @@ function About() {
                 </div>
 
                 {/* Description Section */}
-                <div className="grow p-5 pb-[25%]">
+                <div className="grow p-5 pb-[1%] pt-[20%]">
                   <h3 className="text-xs sm:text-sm md:text-base text-black-600 dark:text-white">
                     {ab.description}
                     <br />
@@ -58,22 +60,17 @@ function About() {
         </div>
 
         {/* =========== Image Section with Title =========== */}
-        <div className="w-full md:w-[35%] flex flex-col items-end">
+        <div className="w-full md:w-[40%] flex flex-col items-center md:items-end mb-4 md:mb-0 order-2 md:order-2">
           {/* Title Above Image */}
           <h4 className="text-lg sm:text-xl md:text-2xl text-orange-500 mb-4 font-bold text-right">
             About Me
           </h4>
-          <div className="relative w-[200px] sm:w-[300px] md:w-[400px] h-[400px] sm:h-[500px] md:h-[550px] rounded-[10%] overflow-hidden transform group">
-            {/* Image Swap */}
+          <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[400px] h-[60vw] max-h-[350px] sm:max-h-[500px] md:max-h-[550px] overflow-hidden transform group rounded-xl shadow-md">
+            {/* Image with shadow on hover */}
             <img
-              src={user_info.main.photo}
+              src={user_info.about[0].photoabout}
               alt="Yash Vavaliya"
-              className="absolute w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-0 rounded-[10%]"
-            />
-            <img
-              src={user_info.main.hoverphoto}
-              alt="Yash Vavaliya Hover"
-              className="absolute w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[10%]"
+              className="absolute w-full h-full object-cover transition-shadow duration-300 group-hover:shadow-2xl group-hover:shadow-orange-400"
             />
           </div>
         </div>
