@@ -19,7 +19,9 @@ const MacbookMockup = () => {
 
           <video autoPlay muted loop>
             <source
-              src="https://d1xm195wioio0k.cloudfront.net/images/video/support.mp4"
+              //src="https://d1xm195wioio0k.cloudfront.net/images/video/support.mp4"
+              src="/india.mp4"
+              className="video"
               type="video/mp4"
             />
           </video>
