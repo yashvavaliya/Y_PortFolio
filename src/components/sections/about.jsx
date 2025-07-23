@@ -25,7 +25,10 @@ function About() {
                     rel="noopener noreferrer"
                     className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center items-center w-20 h-20 rounded-full bg-orange-500 hover:bg-orange-200 border-2 border-black dark:border-orange-500"
                   >
-                    <span className="text-white hover:text-black dark:group-hover:text-black font-bold text-3xl" style={{ fontFamily: "'Amatic SC', cursive" }}>
+                    <span
+                      className="text-white hover:text-black dark:group-hover:text-black font-bold text-3xl"
+                      style={{ fontFamily: "'Amatic SC', cursive" }}
+                    >
                       RESUME
                     </span>
                   </a>
@@ -60,11 +63,20 @@ function About() {
         </div>
 
         {/* =========== Image Section with Title =========== */}
-        <div className="w-full md:w-[40%] flex flex-col items-center md:items-end mb-4 md:mb-0 order-2 md:order-2">
-          {/* Title Above Image */}
-          <h4 className="text-lg sm:text-xl md:text-2xl text-orange-500 mb-4 font-bold text-right pt-8">
-            About Me
-          </h4>
+        <div className="w-full md:w-[40%] flex flex-col items-end mb-4 md:mb-0 order-2 md:order-2">
+          {/* Title and Orange Line Above Image */}
+          <div className="w-full mb-4 pt-8 flex flex-col items-end">
+            <h4
+              className="text-4xl sm:text-5xl md:text-5xl text-black dark:text-white font-bold mr-3"
+              style={{ fontFamily: "'Amatic SC', cursive" }}
+            >
+              About Me
+            </h4>
+            <div
+              className="bg-orange-500 mt-2"
+              style={{ width: "250px", height: '1.5px' }}
+            />
+          </div>
           <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[350px] h-[70vw] max-h-[400px] sm:max-h-[500px] md:max-h-[500px] overflow-hidden transform group rounded-xl shadow-md">
             {/* Image with shadow on hover */}
             <img
