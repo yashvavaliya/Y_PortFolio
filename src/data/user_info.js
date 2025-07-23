@@ -125,37 +125,27 @@ const info = {
       school: "P P Savani University",
       degree: "B.Tech in Information Technology",
       duration: "2023 - present",
-      image: "ppsu.jpeg",
+      image: "Ed&Ex/ppsu.png",
     },
     {
       school: "Sir Bhavsinhji Polytechnic Institute",
       degree: "Joined Diploma in Information Technology",
       duration: "2020 - 2023",
-      image: "bpti.jpeg",
+      image: "Ed&Ex/bpti.png",
     },
   ],
 
   // ============ EXPERIENCE ============
   experience: [
     {
-      position: "Full-Stack Developer Intern",
-      company: "Centralized Cloud Computing International, Inc.",
-      duration: "Mar 2024 - Jun 2024 (3 Months)",
-      image: "ccci.webp",
+      position: "Beckend Intern",
+      company: "SCC INFOTECH LLP",
+      duration: "May 2025 - present(6 Months)",
+      image: "Ed&Ex/scc.png",
       descriptions: [
         "Completed an extensive training program in full-stack web development.",
         "Actively contributed to the ongoing development of a web application.",
         "Mentored by senior developers on best practices and code optimization.",
-      ],
-    },
-    {
-      position: "Work Immersion - Web Developer",
-      company: "St. Peter Velle Technical Training Center",
-      duration: "Nov 2019 - Dec 2019 (1 Month)",
-      image: "spvttc.webp",
-      descriptions: [
-        "Developed Python scripts to automate document score calculations.",
-        "Developed a company website as part of an ICT-related work immersion program.",
       ],
     },
     {

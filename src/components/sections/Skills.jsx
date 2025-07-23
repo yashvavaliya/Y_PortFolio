@@ -61,7 +61,7 @@ function Skills() {
       <div className="relative pl-8 z-10">
         {/* Section Title */}
         <div className="relative mb-12">
-          <h2 className="text-4xl font-bold dark:text-white relative z-10 lg:ml-20 ">
+          <h2 className="text-5xl font-bold dark:text-white relative z-10 lg:ml-20 " style={{ fontFamily: "'Amatic SC', cursive" }}>
             My Skill Set and <br /> Technologies
           </h2>
           <div className="absolute -top-6 left-0 w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center animate-bounce-slow z-0">
