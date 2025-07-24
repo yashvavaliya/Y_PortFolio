@@ -14,6 +14,7 @@ import EducationAndExperience from "../components/sections/EducationAndExperienc
 import Skills from "../components/sections/Skills.jsx";
 // import CarAnimation from "../components/CarAnimation.jsx";
 import DisplayLoad from "./DisplayLoad.jsx";
+import Education from "../components/sections/Education.jsx";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
@@ -58,6 +59,7 @@ function Homepage() {
           <MacbookMockup />
         {/* </div> */}
         <About/>
+        <Education />
         <EducationAndExperience />
         <Skills />
         <Projects />

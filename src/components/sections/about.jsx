@@ -23,7 +23,7 @@ function About() {
                     href="/Yash_Resume.pdf" // Replace with the actual path to your resume PDF
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center items-center w-20 h-20 rounded-full bg-orange-500 hover:bg-orange-200 border-2 border-black dark:border-orange-500"
+                    className="absolute z-10 bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 flex justify-center items-center w-20 h-20 rounded-full bg-orange-500 hover:bg-orange-200 dark:border-orange-500"
                   >
                     <span
                       className="text-white hover:text-black dark:group-hover:text-black font-bold text-3xl"

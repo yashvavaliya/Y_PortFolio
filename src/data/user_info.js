@@ -121,17 +121,23 @@ const info = {
 
   // ============ EDUCATION ============
   education: [
-    {
-      school: "P P Savani University",
-      degree: "B.Tech in Information Technology",
-      duration: "2023 - present",
-      image: "Ed&Ex/ppsu.png",
-    },
+     {
+    school: "Ashadeep Group of Schools",
+    degree: "Completed 10th Standard (SSC)",
+    duration: "March 2020",
+    image: "Ed&Ex/ashadeep.png",
+  },
     {
       school: "Sir Bhavsinhji Polytechnic Institute",
       degree: "Joined Diploma in Information Technology",
       duration: "2020 - 2023",
       image: "Ed&Ex/bpti.png",
+    },
+    {
+      school: "P P Savani University",
+      degree: "B.Tech in Information Technology",
+      duration: "2023 - present",
+      image: "Ed&Ex/ppsu.png",
     },
   ],
 
