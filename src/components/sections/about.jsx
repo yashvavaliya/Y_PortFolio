@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto">
       <div
-        id="education-and-experience"
+        id="about"
         className="flex flex-col md:flex-row gap-4 md:gap-4 justify-between items-center md:items-start w-full"
       >
         {/* =========== About Section =========== */}

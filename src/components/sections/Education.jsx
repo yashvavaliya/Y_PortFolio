@@ -3,10 +3,11 @@ import { FaLandmark } from "react-icons/fa";
 
 function Education() {
   return (
-    <section>
-      <div
-        id="education-and-experience"
-        className="mt-5 mx-4 lg:mx-20 flex flex-col md:flex-row gap-4 md:gap-2"
+    <section className="mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto">
+
+    <div
+        id="education"
+        className="flex flex-col md:flex-row gap-4 md:gap-4 justify-between items-center md:items-start w-full"
       >
         {/* =========== EDUCATION =========== */}
         <div className="w-full md:w-[80%] flex flex-row">

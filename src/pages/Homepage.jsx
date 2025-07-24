@@ -10,11 +10,12 @@ import About from "../components/sections/about.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Contact from "../components/sections/Contact.jsx";
 import Footer from "../components/sections/Footer.jsx";
-import EducationAndExperience from "../components/sections/EducationAndExperience.jsx";
+import Certificates from "../components/sections/Certificates.jsx";
 import Skills from "../components/sections/Skills.jsx";
 // import CarAnimation from "../components/CarAnimation.jsx";
 import DisplayLoad from "./DisplayLoad.jsx";
 import Education from "../components/sections/Education.jsx";
+import Experience from "../components/sections/Experience.jsx";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
@@ -60,7 +61,8 @@ function Homepage() {
         {/* </div> */}
         <About/>
         <Education />
-        <EducationAndExperience />
+        <Certificates />
+        <Experience />
         <Skills />
         <Projects />
         {/* <LaptopTyping /> */}
