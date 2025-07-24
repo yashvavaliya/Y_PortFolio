@@ -20,7 +20,7 @@ function Experience() {
           }}
         >
           <img
-            src="/Ed&Ex/edu1.gif"
+            src="/Ed&Ex/epx.gif"
             alt="Education Icon"
             className="w-14 h-14 object-contain"
           />
@@ -42,7 +42,7 @@ function Experience() {
       <div className="w-full pb-6">
         {/* Mobile: horizontal scroll */}
         <div className="flex flex-nowrap gap-6 px-1 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
-          {user_info.education.map((edu, index) => {
+          {user_info.experience.map((exp, index) => {
             const rotate = index % 2 === 0 ? "rotate-[-2deg]" : "rotate-[2deg]";
             return (
               <div
@@ -52,23 +52,23 @@ function Experience() {
               >
                 {/* School Logo */}
                 <img
-                  className="absolute top-2 left-2 w-8 h-8 object-cover z-10"
-                  src={edu.image}
+                  className="absolute top-5 justify-center w-8 h-8 object-cover z-10"
+                  src={exp.image}
                   alt="School Logo"
                 />
                 {/* School Name & Degree */}
                 <div className="flex-1 flex flex-col justify-center items-center px-2 text-center mt-2">
                   <h3 className="font-semibold text-[13px] text-zinc-600 dark:text-zinc-400 mt-1 mb-1">
-                    {edu.school}
+                    {exp.company}
                   </h3>
                   <p className="font-normal text-[10px] text-zinc-600 dark:text-zinc-400">
-                    {edu.degree}
+                    {exp.position}
                   </p>
                 </div>
-                {/* Duration: top right */}
-                <div className="absolute top-3 right-2 flex justify-end w-auto">
-                  <span className="text-[10px] font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-1 py-0.5 rounded shadow">
-                    {edu.duration}
+                {/* Duration: bottom center on small screens */}
+                <div className="absolute bottom-3 left-1/2 -translate-x-1/2 w-full flex justify-center items-center text-center sm:hidden">
+                  <span className="text-[10px] font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-1 py-0.5 rounded shadow w-full text-center flex justify-center items-center">
+                    {exp.duration}
                   </span>
                 </div>
                 {/* Wave SVG background */}
@@ -91,7 +91,7 @@ function Experience() {
         </div>
         {/* Desktop: wrapped row */}
         <div className="hidden sm:flex flex-wrap justify-center gap-6 px-4 md:px-8 lg:px-10">
-          {user_info.education.map((edu, index) => {
+          {user_info.experience.map((exp, index) => {
             const rotate = index % 2 === 0 ? "rotate-[-2deg]" : "rotate-[2deg]";
             return (
               <div
@@ -101,23 +101,23 @@ function Experience() {
               >
                 {/* School Logo */}
                 <img
-                  className="absolute sm:top-5 sm:left-8 sm:w-12 sm:h-12 object-cover z-10"
-                  src={edu.image}
-                  alt="School Logo"
+                  className="absolute sm:top-5 sm:w-12 sm:h-12 object-cover z-10"
+                  src={exp.image}
+                  alt="Company Logo"
                 />
-                {/* School Name & Degree */}
+                {/* Company Name & Position */}
                 <div className="flex-1 flex flex-col justify-center items-center sm:px-4 text-center sm:mt-6">
                   <h3 className="font-semibold sm:text-lg text-zinc-600 dark:text-zinc-400 sm:mt-2 sm:mb-2">
-                    {edu.school}
+                    {exp.company}
                   </h3>
                   <p className="font-normal sm:text-xs text-zinc-600 dark:text-zinc-400">
-                    {edu.degree}
+                    {exp.position}
                   </p>
                 </div>
                 {/* Duration: bottom center */}
                 <div className="absolute hidden sm:flex bottom-4 left-1/2 -translate-x-1/2 w-full justify-center">
                   <span className="text-xs font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-2 py-1 rounded shadow">
-                    {edu.duration}
+                    {exp.duration}
                   </span>
                 </div>
                 {/* Wave SVG background */}

@@ -29,18 +29,30 @@ function Education() {
           className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 pl-[18%] sm:pl-[5.5%] dark:text-white"
           style={{ fontFamily: "'Amatic SC', cursive" }}
         >
-          Education
+          My Journey
         </h4>
         <div
           className="bg-orange-500 mt-10"
           style={{ width: "120px", height: "1.5px" }}
         />
+        <img
+            src="/Ed&Ex/plane.gif"
+            alt="Education Icon"
+            className="w-20 h-20 object-contain"
+          />
       </div>
 
       {/* Card List - horizontal scroll only on small screens, wrapped row on desktop */}
       <div className="w-full pb-6">
         {/* Mobile: horizontal scroll */}
-        <div className="flex flex-nowrap gap-6 px-1 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div
+          className="flex flex-nowrap gap-6 px-1 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent"
+          style={{
+            WebkitOverflowScrolling: "touch",
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
+        >
           {user_info.education.map((edu, index) => {
             const rotate = index % 2 === 0 ? "rotate-[-2deg]" : "rotate-[2deg]";
             return (

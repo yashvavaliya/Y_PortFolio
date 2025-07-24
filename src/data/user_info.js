@@ -144,7 +144,7 @@ const info = {
   // ============ EXPERIENCE ============
   experience: [
     {
-      position: "Beckend Intern",
+      position: "Backend Intern",
       company: "SCC INFOTECH LLP",
       duration: "May 2025 - present(6 Months)",
       image: "Ed&Ex/scc.png",
