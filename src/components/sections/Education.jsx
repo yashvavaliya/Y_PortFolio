@@ -13,8 +13,8 @@ function Education() {
           {/* =========== EDUCATION TITLE =========== */}
           <div className="relative flex items-center mb-4" style={{ height: '80px' }}>
             <div
-              className="flex absolute justify-center items-center w-20 h-20 rounded-full bg-orange-500 animate-bounce-slow z-0"
-              style={{ pointerEvents: 'none', left: '0', top: '1%', transform: 'translateY(-10%)' }}
+              className="flex justify-center items-center w-20 h-20 rounded-full bg-orange-500 animate-bounce-slow z-0"
+              style={{ pointerEvents: 'none', position: 'absolute', left: '0', top: '10%', transform: 'translateY(-50%)' }}
             >
               <img
                 src="/Ed&Ex/edu1.gif"
@@ -23,7 +23,7 @@ function Education() {
               />
             </div>
             <h4
-              className="relative text-4xl sm:text-5xl font-bold flex gap-2 items-center z-10 pl-20 sm:pl-[7%] dark:text-white"
+              className="relative text-4xl sm:text-5xl font-bold flex gap-2 items-center z-10 pl-20 sm:pl-[8%] dark:text-white"
               style={{ fontFamily: "'Amatic SC', cursive" }}
             >
               Education
