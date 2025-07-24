@@ -67,7 +67,7 @@ function About() {
           {/* Title and Orange Line Above Image */}
           <div className="w-full mb-4 pt-8 flex flex-col items-end">
             <h4
-              className="text-4xl sm:text-5xl md:text-5xl text-black dark:text-white font-bold mr-3"
+              className="text-5xl sm:text-5xl md:text-6xl text-black dark:text-white font-bold mr-3"
               style={{ fontFamily: "'Amatic SC', cursive" }}
             >
               About Me

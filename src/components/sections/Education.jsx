@@ -23,14 +23,14 @@ function Education() {
               />
             </div>
             <h4
-              className="relative text-4xl sm:text-5xl font-bold flex gap-2 items-center z-10 pl-20 sm:pl-[8%] dark:text-white"
+              className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 pl-20 sm:pl-[7.5%] dark:text-white"
               style={{ fontFamily: "'Amatic SC', cursive" }}
             >
               Education
             </h4>
             <div
-              className="bg-orange-500 mt-8"
-              style={{ width: "100px", height: '1.5px' }}
+              className="bg-orange-500 mt-10"
+              style={{ width: "150px", height: '1.5px' }}
             />
             
           </div>
