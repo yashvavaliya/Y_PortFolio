@@ -42,12 +42,12 @@ function Homepage() {
   }, []);
 
   if (isLoading) {
-    return (
-      <DisplayLoad
-        message={messages[currentMessageIndex]}
-        progress={((currentMessageIndex + 1) / messages.length) * 100}
-      />
-    );
+    // return (
+    //   <DisplayLoad
+    //     message={messages[currentMessageIndex]}
+    //     progress={((currentMessageIndex + 1) / messages.length) * 100}
+    //   />
+    // );
   }
 
   return (
@@ -61,8 +61,8 @@ function Homepage() {
         {/* </div> */}
         <About/>
         <Education />
-        <Certificates />
         <Experience />
+        <Certificates />
         <Skills />
         <Projects />
         {/* <LaptopTyping /> */}

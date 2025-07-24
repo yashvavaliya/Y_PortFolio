@@ -26,7 +26,7 @@ function Education() {
           />
         </div>
         <h4
-          className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 pl-20 sm:pl-[5.5%] dark:text-white"
+          className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 pl-[18%] sm:pl-[5.5%] dark:text-white"
           style={{ fontFamily: "'Amatic SC', cursive" }}
         >
           Education
@@ -40,7 +40,7 @@ function Education() {
       {/* Card List - horizontal scroll only on small screens, wrapped row on desktop */}
       <div className="w-full pb-6">
         {/* Mobile: horizontal scroll */}
-        <div className="flex flex-nowrap gap-6 px-1 mt-5 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div className="flex flex-nowrap gap-6 px-1 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           {user_info.education.map((edu, index) => {
             const rotate = index % 2 === 0 ? "rotate-[-2deg]" : "rotate-[2deg]";
             return (
