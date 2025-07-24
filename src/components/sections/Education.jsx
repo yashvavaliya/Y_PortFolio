@@ -40,13 +40,13 @@ function Education() {
       {/* Card List - horizontal scroll only on small screens, wrapped row on desktop */}
       <div className="w-full pb-6">
         {/* Mobile: horizontal scroll */}
-        <div className="flex flex-nowrap gap-6 px-1 mt-5 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-white dark:bg-black" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div className="flex flex-nowrap gap-6 px-1 mt-5 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           {user_info.education.map((edu, index) => {
             const rotate = index % 2 === 0 ? "rotate-[-2deg]" : "rotate-[2deg]";
             return (
               <div
                 key={index}
-                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square w-40 h-40 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
+                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square w-40 h-40 top-4 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
                 style={{ position: "relative", zIndex: 2, overflow: "hidden" }}
               >
                 {/* School Logo */}
