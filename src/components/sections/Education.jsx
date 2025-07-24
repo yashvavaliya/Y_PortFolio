@@ -11,10 +11,10 @@ function Education() {
         {/* =========== EDUCATION =========== */}
         <div className="w-full md:w-[80%]">
           {/* =========== EDUCATION TITLE =========== */}
-          <div className="relative flex items-center mb-4" style={{ height: '50px' }}>
+          <div className="relative flex items-center mb-4" style={{ height: '80px' }}>
             <div
-              className=" flex absolute justify-center items-center w-20 h-20 rounded-full bg-orange-500 animate-bounce-slow z-0"
-               style={{ pointerEvents: 'none' }}
+              className="flex absolute justify-center items-center w-20 h-20 rounded-full bg-orange-500 animate-bounce-slow z-0"
+              style={{ pointerEvents: 'none', left: '0', top: '5%', transform: 'translateY(-50%)' }}
             >
               <img
                 src="/Ed&Ex/edu1.gif"
@@ -22,7 +22,10 @@ function Education() {
                 className="w-12 h-12 object-contain"
               />
             </div>
-            <h4 className="relative text-5xl dark:text-white font-bold flex gap-2 items-center  z-10 pl-[6.5%]" style={{ fontFamily: "'Amatic SC', cursive" }}>
+            <h4
+              className="relative text-4xl sm:text-5xl font-bold flex gap-2 items-center z-10 pl-20 sm:pl-[7%] dark:text-white"
+              style={{ fontFamily: "'Amatic SC', cursive" }}
+            >
               Education
             </h4>
           </div>
