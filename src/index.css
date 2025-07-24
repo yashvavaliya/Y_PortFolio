@@ -12,6 +12,9 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 /* width */
 ::-webkit-scrollbar {
