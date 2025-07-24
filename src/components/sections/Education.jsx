@@ -14,12 +14,12 @@ function Education() {
           <div className="relative flex items-center mb-4" style={{ height: '80px' }}>
             <div
               className="flex absolute justify-center items-center w-20 h-20 rounded-full bg-orange-500 animate-bounce-slow z-0"
-              style={{ pointerEvents: 'none', left: '0', top: '5%', transform: 'translateY(-50%)' }}
+              style={{ pointerEvents: 'none', left: '0', top: '1%', transform: 'translateY(-10%)' }}
             >
               <img
                 src="/Ed&Ex/edu1.gif"
                 alt="Education Icon"
-                className="w-12 h-12 object-contain"
+                className="w-14 h-14 object-contain"
               />
             </div>
             <h4
@@ -28,6 +28,11 @@ function Education() {
             >
               Education
             </h4>
+            <div
+              className="bg-orange-500 mt-8"
+              style={{ width: "100px", height: '1.5px' }}
+            />
+            
           </div>
 
           {/* =========== EDUCATION LIST =========== */}
