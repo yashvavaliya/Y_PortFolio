@@ -154,16 +154,6 @@ const info = {
         "Mentored by senior developers on best practices and code optimization.",
       ],
     },
-    {
-      position: "Work Immersion - Web Developer",
-      company: "St. Peter Velle Technical Training Center",
-      duration: "Nov 2019 - Dec 2019 (1 Month)",
-      image: "spvttc.webp",
-      descriptions: [
-        "Developed Python scripts to automate document score calculations.",
-        "Developed a company website as part of an ICT-related work immersion program.",
-      ],
-    },
   ],
 
   // ============ CERTIFICATES ============
