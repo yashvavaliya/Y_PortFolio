@@ -36,7 +36,7 @@ function Education() {
           style={{ width: "120px", height: "1.5px" }}
         />
         <img
-            src="/Ed&Ex/plane.gif"
+            src="/Ed&Ex/plane_light.gif"
             alt="Education Icon"
             className="w-20 h-20 object-contain"
           />

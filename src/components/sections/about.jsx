@@ -1,4 +1,5 @@
 import user_info from "../../data/user_info.js";
+import Phone from "./3Dphone.jsx";
 
 function About() {
   return (
@@ -58,12 +59,16 @@ function About() {
                   </h3>
                 </div>
               </div>
+              {/* Phone animation below image */}
+              <div className="w-full flex justify-end mt-1">
+                <Phone />
+              </div>
             </div>
           ))}
         </div>
 
         {/* =========== Image Section with Title =========== */}
-        <div className="w-full md:w-[40%] flex flex-col items-end mb-4 md:mb-0 order-2 md:order-2">
+        <div className="w-full md:w-[35%] flex flex-col items-end mb-4 md:mb-0 order-2 md:order-2">
           {/* Title and Orange Line Above Image */}
           <div className="w-full mb-4 pt-8 flex flex-col items-end">
             <h4
@@ -74,7 +79,7 @@ function About() {
             </h4>
             <div
               className="bg-orange-500 mt-2"
-              style={{ width: "250px", height: '1.5px' }}
+              style={{ width: "250px", height: "1.5px" }}
             />
           </div>
           <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[350px] h-[70vw] max-h-[400px] sm:max-h-[500px] md:max-h-[500px] overflow-hidden transform group rounded-xl shadow-md">
