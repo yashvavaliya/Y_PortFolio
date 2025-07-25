@@ -11,7 +11,7 @@ function About() {
         {/* =========== About Section =========== */}
         <div className="w-full md:w-[65%] flex flex-col order-1">
           {user_info.about.map((ab, index) => (
-            <div key={index}>
+            <div key={index} className="mb-1">
               <div className="flex gap-x-3 relative group rounded-lg">
                 {/* Vertical Line and Circle */}
                 <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-1/2 after:w-px after:-translate-x-1/2 after:bg-zinc-500 group-hover:after:bg-black dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600">
