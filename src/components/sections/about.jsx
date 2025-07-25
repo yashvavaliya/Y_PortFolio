@@ -9,7 +9,7 @@ function About() {
         className="flex flex-col md:flex-row gap-4 md:gap-4 justify-between items-center md:items-start w-full"
       >
         {/* =========== About Section =========== */}
-        <div className="w-full md:w-[65%] flex flex-col order-1">
+        <div className="w-full md:w-[70%] flex flex-col order-1">
           {user_info.about.map((ab, index) => (
             <div key={index}>
               <div className="flex gap-x-3 relative group rounded-lg">
@@ -30,7 +30,7 @@ function About() {
                       className="text-white hover:text-black dark:group-hover:text-black font-bold text-3xl"
                       style={{ fontFamily: "'Amatic SC', cursive" }}
                     >
-                      RESUME
+                      RESUM
                     </span>
                   </a>
 
@@ -79,10 +79,10 @@ function About() {
             </h4>
             <div
               className="bg-orange-500 mt-2"
-              style={{ width: "250px", height: "1.5px" }}
+              style={{ width: "280px", height: "1.5px" }}
             />
           </div>
-          <div className="relative w-[70vw] max-w-[350px] sm:max-w-[400px] md:max-w-[350px] h-[70vw] max-h-[400px] sm:max-h-[500px] md:max-h-[500px] overflow-hidden transform group rounded-xl shadow-md">
+          <div className="relative w-[80vw] max-w-[450px] sm:max-w-[400px] md:max-w-[350px] h-[80vw] max-h-[400px] sm:max-h-[500px] md:max-h-[500px] overflow-hidden transform group rounded-xl shadow-md">
             {/* Image with shadow on hover */}
             <img
               src={user_info.about[0].photoabout}
