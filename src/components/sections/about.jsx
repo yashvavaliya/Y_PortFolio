@@ -30,7 +30,7 @@ function About() {
                       className="text-white hover:text-black dark:group-hover:text-black font-bold text-3xl"
                       style={{ fontFamily: "'Amatic SC', cursive" }}
                     >
-                      RESUM
+                      RESUME
                     </span>
                   </a>
 
