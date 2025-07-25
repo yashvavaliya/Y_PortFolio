@@ -241,7 +241,7 @@
 
       .start-button {
         width: 30%;
-        background: hsl(232, 83%, 46%);
+        background: rgb(249 115 22);
         color: #eeeeee;
         padding: 1em;
         text-align: center;
