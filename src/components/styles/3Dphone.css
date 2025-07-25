@@ -9,18 +9,34 @@
 }
 
 @keyframes light {
-  25% { box-shadow: 0 0 2em 1em var(--c3); }
+  30% { box-shadow: 0 0 3em 2em var(--c3); }
   0%, 50%, 100% { box-shadow: 0 0 0 0 var(--c3); }
 }
 
 .phone {
-  --c0: #1c1c1e;;     /* Deep charcoal for phone body (dark gray-black) */
-  --c1: #4b5563;     /* Medium cool gray for buildings */
-  --c2: #e5e7eb;     /* Light warm gray for roads/background */
-  --c3: #f80;        /* Orange pin - KEEP as is for contrast */
-  --c4: #facc15;     /* Golden yellow dots (muted, less neon than before) */
-  --c5: #6b7280;
+    --c0: #a7b4c4;     /* Dark charcoal for phone body */
+  --c1: #c7d1e0;     /* Metallic light steel blue (building base) */
+  --c2: #e8ecf3;     /* Softest silver-white (roads/background) */
+  --c3: #f80;        /* Orange pin (unchanged) */
+  --c4: #ffea3b;     /* Bright yellow for path dots */
+  --c5: #a5b0c3;     /* Medium gray-blue for highlight blocks */
   --c6: #07a70c;
+  --c7: #000000;     /* Bright red for error states */
+  --c8: #5e6b7a;     /* Muted gray for secondary elements */
+  --c9: #4b4b4b;
+  --c10: #1E90FF;    /* Light yellow for highlights */
+  --c11: #00BFFF;    /* Light blue for highlights */
+  --c12: #90EE90;    /* Green for highlights */
+  --c13: #C0C0C0; /* Silver for highlights */
+  --c14: #87CEEB; /* Sky blue for highlights */
+  --c15: #4169E1; /* Royal blue for highlights */
+  --c16: #808080;
+  --c17: #F4A460; /* Light peach for highlights */
+  --c18: #D2691E; /* Light peach for highlights */
+  --c19: #FFB6C1;
+  --c20: #4169E1;
+  --c21: #FFEBCD;
+  --c22: #F0FFF0; /* Light gray for highlights */
   --t: 1s;
   font-size: 5px;
   width: 30em;
@@ -53,7 +69,7 @@
         background-position: 0em 0;
       }
       .screen {
-        box-shadow: inset -0.5em 0.5em var(--c1);
+        box-shadow: inset -0.5em 0.5em var(--c8);
 
         .building {
           box-shadow: 
@@ -110,7 +126,7 @@
 
         .trees {
           .tree {
-            box-shadow: -0.5em 0 var(--c6);
+            box-shadow: -0.5em 0 var(--c8);
             transition-delay: calc(var(--t) * 8);
             
             &::before, &::after {
@@ -164,7 +180,7 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 50% 5%, var(--c1) 0.5em, #0000 0.6em),
+      radial-gradient(circle at 50% 5%, var(--c9) 0.5em, #0000 0.6em),
       var(--c0);
     border-radius: 3em;
     transition: box-shadow var(--t);
@@ -190,17 +206,17 @@
       box-shadow: inset 0 0 var(--c1);
       transition: box-shadow var(--t);
       background:
-        linear-gradient(var(--c1) 0 0) 9.5% 6% / 30% 27%,
-        linear-gradient(var(--c5) 0 0) 90% 6% / 35% 27%,
-        linear-gradient(var(--c1) 0 0) 9.5% 50% / 30% 14%,
-        linear-gradient(var(--c1) 0 0) 90% 50% / 35% 14%,
-        linear-gradient(var(--c1) 0 0) 5% 94.5% / 8% 27%,
-        linear-gradient(var(--c1) 0 0) 33.5% 94.5% / 8% 27%,
-        linear-gradient(var(--c1) 0 0) 90% 94.5% / 35% 27%,
-        linear-gradient(#0000 35%, var(--c0) 0 40%, #0000 0 60%, var(--c0) 0 65%, #0000 0),
-        linear-gradient(90deg, #0000 43%, var(--c0) 0 52%, #0000 0),
-        linear-gradient(90deg, #0000 17.5%, var(--c0) 0 26.5%, #0000 0) 0 100% / 100% 40%,
-        var(--c2);
+        linear-gradient(var(--c13) 0 0) 9.5% 6% / 30% 27%,
+        linear-gradient(var(--c14) 0 0) 90% 6% / 35% 27%,
+        linear-gradient(var(--c12) 0 0) 9.5% 50% / 30% 14%,
+        linear-gradient(var(--c12) 0 0) 90% 50% / 35% 14%,
+        linear-gradient(var(--c20) 0 0) 5% 94.5% / 8% 27%,
+        linear-gradient(var(--c19) 0 0) 33.5% 94.5% / 8% 27%,
+        linear-gradient(var(--c21) 0 0) 90% 94.5% / 35% 27%,
+        linear-gradient(#0000 35%, var(--c16) 0 40%, #0000 0 60%, var(--c16) 0 65%, #0000 0),
+        linear-gradient(90deg, #0000 43%, var(--c16) 0 52%, #0000 0),
+        linear-gradient(90deg, #0000 17.5%, var(--c16) 0 26.5%, #0000 0) 0 100% / 100% 40%,
+        var(--c22);
       background-repeat: no-repeat;
 
       .marker-container {
@@ -224,9 +240,9 @@
       }
 
       .start-button {
-        width: 90%;
-        background: #293;
-        color: #fff;
+        width: 30%;
+        background: hsl(232, 83%, 46%);
+        color: #eeeeee;
         padding: 1em;
         text-align: center;
         font-size: 1.5em;
@@ -234,8 +250,8 @@
         left: 50%;
         bottom: 0;
         transform: translate(-50%, -25%);
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: 400;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
         text-transform: uppercase;
         transition: opacity calc(var(--t) / 4);
         transition-delay: calc(var(--t) / 2);
@@ -267,7 +283,7 @@
       .building, .building-shadow {
         width: var(--w);
         height: var(--h);
-        background: var(--c2);
+        background: var(--c8);
         box-shadow: 
           inset 0 0 0 0.5em var(--c2),
           inset 0 0 var(--c0),
@@ -278,7 +294,7 @@
 
         &.building-shadow {
           box-shadow: none;
-          background: var(--c0);
+          background: var(--c8);
           transform-origin: 95% 50%;
           transform: translate(-50%, -50%) scale(0.6);
 
@@ -328,19 +344,19 @@
 
           &::before {
             background: 
-              linear-gradient(var(--c0) 0 0) 0 0 / 100% 0.5em no-repeat,
-              linear-gradient(var(--c1) 0 0) 0 9em / 100% 1em no-repeat,
-              repeating-linear-gradient(var(--c0) 0 0.25em, var(--c1) 0 1.35em);
+              linear-gradient(var(--c18) 0 0) 0 0 / 100% 0.5em no-repeat,
+              linear-gradient(var(--c18) 0 0) 0 9em / 100% 1em no-repeat,
+              repeating-linear-gradient(var(--c17) 0 0.25em, var(--c18) 0 1.35em);
           }
 
           &::after {
             background: 
-              linear-gradient(var(--c0) 0 0) 0 0 / 0.5em 100% no-repeat,
-              linear-gradient(var(--c0) 0 0) 8.3em 50% / 2em 40% no-repeat,
-              linear-gradient(var(--c1) 0 0) 8.3em 50% / 2em 50% no-repeat,
-              linear-gradient(var(--c1) 0 0) 9.75em 50% / 0.5em 100% no-repeat,
-              linear-gradient(var(--c0) 0 0) 9em 0 / 1em 100% no-repeat,
-              repeating-linear-gradient(90deg, var(--c1) 0 0.25em, var(--c0) 0 1.35em);
+              linear-gradient(var(--c17) 0 0) 0 0 / 0.5em 100% no-repeat,
+              linear-gradient(var(--c21) 0 0) 8.3em 50% / 2em 40% no-repeat,
+              linear-gradient(var(--c18) 0 0) 8.3em 50% / 2em 50% no-repeat,
+              linear-gradient(var(--c17) 0 0) 9.75em 50% / 0.5em 100% no-repeat,
+              linear-gradient(var(--c17) 0 0) 9em 0 / 1em 100% no-repeat,
+              repeating-linear-gradient(90deg, var(--c18) 0 0.25em, var(--c17) 0 1.35em);
           }
         }
 
@@ -355,16 +371,16 @@
 
           &::before {
             background: 
-              linear-gradient(var(--c5) 0 0) 0 12.75em / 100% 0.5em no-repeat,
-              repeating-linear-gradient(90deg, #0000 0 10%, var(--c2) 0 45%) 0 10em / 100% 3em no-repeat,
-              var(--c5);
+              linear-gradient(var(--c15) 0 0) 0 12.75em / 100% 0.5em no-repeat,
+              repeating-linear-gradient(90deg, #0000 0 10%, var(--c0) 0 45%) 0 10em / 100% 3em no-repeat,
+              var(--c15);
           }
 
           &::after {
             background: 
-              linear-gradient(var(--c0) 0 0) 12.75em 0  /  0.5em 100% no-repeat,
-              repeating-linear-gradient(#0000 0 10%,  var(--c2) 0 45%)  10em 0 / 3em 100% no-repeat,
-              var(--c0)
+              linear-gradient(var(--c10) 0 0) 12.75em 0  /  0.5em 100% no-repeat,
+              repeating-linear-gradient(#0000 0 10%,  var(--c0) 0 45%)  10em 0 / 3em 100% no-repeat,
+              var(--c10)
           }
 
           .antenna {
@@ -412,17 +428,17 @@
 
             &::before {
               background:
-                repeating-linear-gradient(var(--c5) 0 10%, #0000 0 45%),
-                repeating-linear-gradient(90deg, var(--c5) 0 10%, #0000 0 45%)
-                var(--c2)
+                repeating-linear-gradient(var(--c15) 0 10%, #0000 0 45%),
+                repeating-linear-gradient(90deg, var(--c15) 0 10%, #0000 0 45%)
+                var(--c0)
                 ;
             }
 
             &::after {
               background:
-                repeating-linear-gradient(var(--c0) 0 10%, #0000 0 45%),
-                repeating-linear-gradient(90deg, var(--c0) 0 10%, #0000 0 45%)
-                var(--c2)
+                repeating-linear-gradient(var(--c10) 0 10%, #0000 0 45%),
+                repeating-linear-gradient(90deg, var(--c10) 0 10%, #0000 0 45%)
+                var(--c0)
             }
 
             &:nth-child(1) { --dt: -1em; }
@@ -443,15 +459,15 @@
           &::before {
             background: 
 
-              repeating-linear-gradient(var(--c0) 0 2%, #0000 0 12.5%),
-              linear-gradient(var(--c0) 0 0) 50% 100% / 20% 87.5% no-repeat,
+              repeating-linear-gradient(var(--c9) 0 2%, #0000 0 12.5%),
+              linear-gradient(var(--c9) 0 0) 50% 100% / 20% 87.5% no-repeat,
               var(--c1);
           }
 
           &::after {
             background: 
-              repeating-linear-gradient(90deg, var(--c1) 0 2%, var(--c0) 0 12.5%),
-              var(--c0)
+              repeating-linear-gradient(90deg, var(--c1) 0 2%, var(--c9) 0 12.5%),
+              var(--c9)
           }
 
           .side {
@@ -461,17 +477,17 @@
 
             &::before {
               background: 
-                repeating-linear-gradient(var(--c0) 0 3%, #0000 0 15%),
-                linear-gradient(var(--c1) 0 0) 50% 0% / 1em 3.5em no-repeat,
-                linear-gradient(var(--c0) 0 0) 50% 100% / 1.5em 8em no-repeat,
+                repeating-linear-gradient(var(--c9) 0 3%, #0000 0 15%),
+                linear-gradient(var(--c2) 0 0) 50% 0% / 1em 3.5em no-repeat,
+                linear-gradient(var(--c9) 0 0) 50% 100% / 1.5em 8em no-repeat,
 
                 var(--c1);
             }
 
             &::after {
               background: 
-                repeating-linear-gradient(90deg, var(--c1) 0 3%, var(--c0) 0 15%),
-                var(--c0)
+                repeating-linear-gradient(90deg, var(--c1) 0 3%, var(--c9) 0 15%),
+                var(--c9)
             }
           }
         }
@@ -485,7 +501,7 @@
           --w: 1.5em;
           width: var(--w);
           height: var(--w);
-          background: var(--c2);
+          background: var(--c6);
           border-radius: 50%;
           box-shadow: 0 0 var(--c0);
           transition: box-shadow var(--t);
@@ -498,7 +514,7 @@
             left: 50%;
             width: 75%;
             height: 75%;
-            background: var(--c2);
+            background: var(--c6);
             border-radius: 50%;
             transform: translate(-50%, -50%) translateZ(0);
             transition: transform var(--t);
@@ -620,7 +636,7 @@
       left: 25%;
       transform: translate(-50%, -50%);
       background:
-        radial-gradient(farthest-side circle, var(--c0) 50%, #0000 55%) 0 0 / 0.8em 0.8em,
+        radial-gradient(farthest-side circle, var(--c9) 50%, #0000 55%) 0 0 / 0.8em 0.8em,
         radial-gradient(farthest-side circle, var(--c2) 50%, #0000 55%) 0.075em 0.075em / 0.8em 0.8em
     }
 
@@ -636,7 +652,7 @@
       width: 12.5%;
       height: 22.5%;
       border-radius: 50em;
-      background: var(--c0);
+      background: var(--c9);
       box-shadow: inset -0.125em -0.125em var(--c2);
     }
   }
@@ -665,7 +681,7 @@
       width: 25%;
       height: 10%;
       border-radius: 50em;
-      box-shadow: -0.25em 0.25em var(--c1);
+      box-shadow: -0.25em 0.25em var(--c9);
     }
 
     &::after {
