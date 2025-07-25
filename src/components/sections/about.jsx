@@ -11,7 +11,7 @@ function About() {
         {/* =========== About Section =========== */}
         <div className="w-full md:w-[65%] flex flex-col order-1">
           {user_info.about.map((ab, index) => (
-            <div key={index} className="mb-1">
+            <div key={index}>
               <div className="flex gap-x-3 relative group rounded-lg">
                 {/* Vertical Line and Circle */}
                 <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-1/2 after:w-px after:-translate-x-1/2 after:bg-zinc-500 group-hover:after:bg-black dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600">
@@ -68,11 +68,11 @@ function About() {
         </div>
 
         {/* =========== Image Section with Title =========== */}
-        <div className="w-full md:w-[40%] flex flex-col items-end md:mb-0 order-2 md:order-2">
+        <div className="w-full md:w-[40%] flex flex-col items-end md:mb-0 order-2 md:order-2 md:mt-8">
           {/* Title and Orange Line Above Image */}
           <div className="w-full mb-4 flex flex-col items-end">
             <h4
-              className="text-5xl sm:text-5xl md:text-6xl text-black dark:text-white font-bold mr-3"
+              className="text-5xl sm:text-5xl md:text-6xl text-black dark:text-white font-bold"
               style={{ fontFamily: "'Amatic SC', cursive" }}
             >
               About Me
