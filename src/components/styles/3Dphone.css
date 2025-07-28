@@ -296,7 +296,7 @@
         width: 4.5em;
         height: 4.5em;
         background: linear-gradient(#fff 0 0) 50% 50% / 2em 0.25em,
-          linear-gradient(#fff 0 0) 50% 50% / 0.25em 2em, #0008;
+          linear-gradient(#fff 0 0) 50% 50% / 0.25em 2em, rgba(0, 0, 0, 0.934);
         color: #fff;
         text-align: center;
         border-radius: 50%;
