@@ -76,10 +76,10 @@ function Experience() {
                 />
                 {/* School Name & Degree */}
                 <div className="flex-1 flex flex-col justify-center items-center px-2 text-center mt-2">
-                  <h3 className="font-semibold text-[13px] text-zinc-600 dark:text-zinc-400 mt-1 mb-1">
+                  <h3 className="font-semibold text-[13px] text-zinc-600 dark:text-zinc-400 mt-1 mb-1 font-sans">
                     {exp.company}
                   </h3>
-                  <p className="font-normal text-[10px] text-zinc-600 dark:text-zinc-400">
+                  <p className="font-normal text-[10px] text-zinc-600 dark:text-zinc-400 font-sans">
                     {exp.position}
                   </p>
                 </div>
@@ -125,10 +125,10 @@ function Experience() {
                 />
                 {/* Company Name & Position */}
                 <div className="flex-1 flex flex-col justify-center items-center sm:px-4 text-center sm:mt-6">
-                  <h3 className="font-semibold sm:text-lg text-zinc-600 dark:text-zinc-400 sm:mt-2 sm:mb-2">
+                  <h3 className="font-semibold sm:text-lg text-zinc-600 dark:text-zinc-400 sm:mt-2 sm:mb-2 font-sans">
                     {exp.company}
                   </h3>
-                  <p className="font-normal sm:text-xs text-zinc-600 dark:text-zinc-400">
+                  <p className="font-normal sm:text-xs text-zinc-600 dark:text-zinc-400 font-sans">
                     {exp.position}
                   </p>
                 </div>

@@ -20,7 +20,7 @@ function Education() {
   return (
     <section
       ref={sectionRef}
-      className={`mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s] ease-in-out ${
+      className={`mt-[5%] px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s] ease-in-out ${
         inView ? "translate-x-0 opacity-100" : "-translate-x-32 opacity-0"
       }`}
     >
@@ -63,7 +63,7 @@ function Education() {
       </div>
 
       {/* Card List - horizontal scroll only on small screens, wrapped row on desktop */}
-      <div className="w-full pb-6">
+      <div className="w-full pb-10">
         {/* Mobile: horizontal scroll */}
         <div
           className="flex flex-nowrap gap-6 px-1 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent"

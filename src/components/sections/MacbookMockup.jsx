@@ -1,6 +1,5 @@
-
 import React, { useRef, useEffect, useState } from "react";
-import "././styles/mockup.css";
+import "../styles/MacbookMockup.css";
 
 const MacbookMockup = () => {
   const sectionRef = useRef(null);

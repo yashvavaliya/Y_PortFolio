@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import ToggleTheme from "../components/ToggleTheme.jsx";
 
 import Hero from "../components/sections/Hero.jsx";
-import MacbookMockup from "../components/MacbookMockup.jsx";
+import MacbookMockup from "../components/sections/MacbookMockup.jsx";
 import About from "../components/sections/about.jsx";
 import Projects from "../components/sections/Projects.jsx";
 import Contact from "../components/sections/Contact.jsx";

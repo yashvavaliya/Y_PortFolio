@@ -56,7 +56,7 @@
   --c21: #ffebcd;
   --c22: #f0fff0; /* Light gray for highlights */
   --t: 1s;
-  font-size: 5px;
+  font-size: 6px;
   width: 30em;
   aspect-ratio: 67 / 138;
   color: var(--c0);

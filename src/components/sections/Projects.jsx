@@ -26,10 +26,6 @@ function Projects() {
 
   return (
     <section id="projects" className="relative pb-[10%]"> {/* Added padding-bottom */}
-      {/* Down Arrow */}
-      <div className="absolute left-[8%] transform -translate-x-1/2 text-zinc-300 dark:text-white mt-1 text-5xl font-bold">
-        ↓
-      </div>
 
       <div className="relative px-6 py-20">
         <h2 className="text-3xl dark:text-zinc-300 font-bold mb-2 z-10 lg:ml-20">

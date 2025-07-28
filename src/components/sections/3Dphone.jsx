@@ -52,8 +52,8 @@ function Phone() {
                         color: "#b0aeaeff",
                         textAlign: "center",
                         fontFamily: "'Just Another Hand', cursive",
-                        fontSize: "30px",
-                        marginBottom: "-10px",
+                        fontSize: "20px",
+                        marginBottom: "-5px",
                       }}
                     >
                       Where are you from?
