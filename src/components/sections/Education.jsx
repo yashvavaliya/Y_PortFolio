@@ -1,9 +1,29 @@
 import user_info from "../../data/user_info.js";
 import "../styles/education-wave.css";
+import { useRef, useEffect, useState } from "react";
 
 function Education() {
+  const sectionRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
   return (
-    <section className=" mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto">
+    <section
+      ref={sectionRef}
+      className={`mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s] ease-in-out ${
+        inView ? "translate-x-0 opacity-100" : "-translate-x-32 opacity-0"
+      }`}
+    >
       {/* Education Title */}
       <div
         className="relative flex items-center mb-2 sm:mb-10"
@@ -36,10 +56,10 @@ function Education() {
           style={{ width: "120px", height: "1.5px" }}
         />
         <img
-            src="/Ed&Ex/plane_light.gif"
-            alt="Education Icon"
-            className="w-20 h-20 object-contain"
-          />
+          src="/Ed&Ex/plane_light.gif"
+          alt="Education Icon"
+          className="w-20 h-20 object-contain"
+        />
       </div>
 
       {/* Card List - horizontal scroll only on small screens, wrapped row on desktop */}
@@ -58,7 +78,7 @@ function Education() {
             return (
               <div
                 key={index}
-                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square w-40 h-40 top-4 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
+                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square w-40 h-40 top-4 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-1500 ${rotate} floating-card`}
                 style={{ position: "relative", zIndex: 2, overflow: "hidden" }}
               >
                 {/* School Logo */}
@@ -107,7 +127,7 @@ function Education() {
             return (
               <div
                 key={index}
-                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square sm:w-56 sm:h-56 md:w-64 md:h-64 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
+                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square sm:w-56 sm:h-56 md:w-64 md:h-64 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-1500 ${rotate} floating-card`}
                 style={{ position: "relative", zIndex: 2, overflow: "hidden" }}
               >
                 {/* School Logo */}

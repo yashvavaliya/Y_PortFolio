@@ -1,9 +1,27 @@
 import user_info from "../../data/user_info.js";
 import "../styles/education-wave.css";
+import { useRef, useEffect, useState } from "react";
 
 function Experience() {
+  const sectionRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(
+      ([entry]) => setInView(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => {
+      if (sectionRef.current) observer.unobserve(sectionRef.current);
+    };
+  }, []);
+
   return (
-    <section className=" mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto">
+    <section
+      ref={sectionRef}
+      className={`mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s] ease-in-out ${inView ? 'translate-x-0 opacity-100' : 'translate-x-32 opacity-0'}`}
+    >
       {/* Experience Title */}
       <div
         className="relative flex items-center justify-end mb-2 sm:mb-10"
