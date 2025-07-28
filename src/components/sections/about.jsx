@@ -5,8 +5,10 @@ import Phone from "./3Dphone.jsx";
 function About() {
   const aboutSectionRef = useRef(null);
   const imageSectionRef = useRef(null);
+  const phoneRefs = useRef([]);
   const [aboutInView, setAboutInView] = useState(false);
   const [imageInView, setImageInView] = useState(false);
+  const [phoneInViewArr, setPhoneInViewArr] = useState([]);
 
   useEffect(() => {
     const aboutObserver = new window.IntersectionObserver(
@@ -25,17 +27,39 @@ function About() {
     };
   }, []);
 
+  useEffect(() => {
+    // For each Phone animation, set up an observer
+    if (!user_info.about) return;
+    const observers = [];
+    let arr = Array(user_info.about.length).fill(false);
+    user_info.about.forEach((_, idx) => {
+      const observer = new window.IntersectionObserver(
+        ([entry]) => {
+          arr[idx] = entry.isIntersecting;
+          setPhoneInViewArr([...arr]);
+        },
+        { threshold: 0.2 }
+      );
+      if (phoneRefs.current[idx]) observer.observe(phoneRefs.current[idx]);
+      observers.push(observer);
+    });
+    return () => {
+      observers.forEach((observer, idx) => {
+        if (phoneRefs.current[idx]) observer.unobserve(phoneRefs.current[idx]);
+      });
+    };
+  }, [user_info.about]);
+
   return (
     <section className="mt-30 px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto">
       <div
         id="about"
         className="flex flex-col md:flex-row gap-4 md:gap-4 justify-between items-center md:items-start w-full"
-        ref={aboutSectionRef}
       >
         {/* =========== About Section =========== */}
         <div
           ref={aboutSectionRef}
-          className={`w-full md:w-[70%] flex flex-col order-1 transition-all duration-[2600ms]
+          className={`w-full md:w-[70%] flex flex-col order-1 transition-all duration-[2s]
     ${aboutInView ? "translate-y-0 opacity-100" : "translate-y-16 opacity-0"}`}
         >
           {user_info.about.map((ab, index) => (
@@ -88,7 +112,10 @@ function About() {
                 </div>
               </div>
               {/* Phone animation below image */}
-              <div className="w-full flex md:justify-end justify-end pr-6">
+              <div
+                ref={el => phoneRefs.current[index] = el}
+                className={`w-full flex md:justify-end justify-end pr-6 transition-all duration-[2s] ease-in-out ${phoneInViewArr[index] ? 'translate-x-0 opacity-100' : '-translate-x-32 opacity-0'}`}
+              >
                 <Phone />
               </div>
             </div>
@@ -98,7 +125,7 @@ function About() {
         {/* =========== Image Section with Title =========== */}
         <div
           ref={imageSectionRef}
-          className={`w-full md:w-[40%] flex flex-col items-end md:mb-0 order-2 md:order-2 md:mt-8 transition-all duration-[2600ms]
+          className={`w-full md:w-[40%] flex flex-col items-end md:mb-0 order-2 md:order-2 md:mt-8 transition-all duration-[2s]
     ${imageInView ? "translate-y-0 opacity-100" : "-translate-y-16 opacity-0"}`}
         >
           {/* Title and Orange Line Above Image */}
@@ -119,7 +146,7 @@ function About() {
             <img
               src={user_info.about[0].photoabout}
               alt="Yash Vavaliya"
-              className="absolute w-full h-full object-cover transition-shadow duration-[3600ms] group-hover:shadow-2xl group-hover:shadow-orange-400"
+              className="absolute w-full h-full object-cover transition-shadow duration-[2s] group-hover:shadow-2xl group-hover:shadow-orange-400"
             />
           </div>
         </div>
