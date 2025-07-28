@@ -109,7 +109,7 @@ function Phone() {
               ? {
                   background: "rgba(255,255,255,0.95)",
                   color: "#ff9800",
-                  padding: "8px 10px",
+                  padding: "8px 18px",
                   borderRadius: "8px",
                   fontWeight: "bold",
                   minWidth: "80px",
@@ -120,6 +120,7 @@ function Phone() {
                   flexDirection: "column",
                   fontFamily: "'Just Another Hand', cursive",
                   fontSize: "18px",
+                  marginLeft: "100px",
                 }
               : {
                   background: "rgba(255,255,255,0.9)",
@@ -135,10 +136,11 @@ function Phone() {
                   flexDirection: "column",
                   fontFamily: "'Just Another Hand', cursive",
                   fontSize: "30px",
+                  marginLeft: "250px",
                 };
 
             const suratImgStyle = isSmall
-              ? { width: "24px", height: "24px", marginTop: "4px" }
+              ? { width: "26px", height: "26px" }
               : { width: "36px", height: "36px", marginTop: "8px" };
             return (
               <div style={parentStyle}>
@@ -153,12 +155,18 @@ function Phone() {
                     ચાલો........!
                   </span>
                   <span style={{ color: "#ff9800" }}>SURAT</span>
-                  <img
-                    src="/icon/google-maps.png"
-                    alt="location"
-                    style={suratImgStyle}
-                  />
-                </div>
+                  <a
+                    href="https://maps.app.goo.gl/nC4SK4wvokRL38Aa9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/icon/google-maps.png"
+                      alt="location"
+                      style={suratImgStyle}
+                    />
+                  </a>
+                  </div>
               </div>
             );
           }

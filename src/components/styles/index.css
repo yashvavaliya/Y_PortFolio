@@ -1,0 +1,5 @@
+ /* Add this to your CSS (e.g., in src/index.css or About.module.css): */
+ .translate-y-20 { transform: translateY(80px); }
+ .translate-y-0 { transform: translateY(0); }
+ .opacity-0 { opacity: 0; }
+ .opacity-100 { opacity: 1; }

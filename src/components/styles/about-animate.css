@@ -1,0 +1,13 @@
+/* Animation and utility classes for About section */
+
+.translate-y-20 { transform: translateY(80px); }
+.translate-y-0 { transform: translateY(0); }
+.opacity-0 { opacity: 0; }
+.opacity-100 { opacity: 1; }
+
+
+
+
+.h-0 { height: 0; }
+.h-20 { height: 80px; }
+.h-32 { height: 128px; } /* optional for longer line */
