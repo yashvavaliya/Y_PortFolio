@@ -35,17 +35,19 @@ function Experience() {
             right: "0",
             top: "1%",
             transform: "translateY(-50%)",
+            
+            animationDuration: "6s",
           }}
         >
           <img
-            src="/Ed&Ex/epx.gif"
+            src="/Ed&Ex/epx.png"
             alt="Education Icon"
-            className="w-14 h-14 object-contain"
+            className="w-10 h-10 object-contain"
           />
         </div>
         <div
           className="bg-orange-500 mt-10"
-          style={{ width: "120px", height: "1.5px" }}
+          style={{ width: "120px", height: "1.5px", }}
         />
         <h4
           className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 pr-[18%] sm:pr-[5.5%] dark:text-white"

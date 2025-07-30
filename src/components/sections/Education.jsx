@@ -37,12 +37,13 @@ function Education() {
             left: "0",
             top: "1%",
             transform: "translateY(-50%)",
+            animationDuration: "6s",
           }}
         >
           <img
-            src="/Ed&Ex/edu1.gif"
+            src="/Ed&Ex/edu2.png"
             alt="Education Icon"
-            className="w-14 h-14 object-contain"
+            className="w-11 h-11 object-contain pt-2"
           />
         </div>
         <h4

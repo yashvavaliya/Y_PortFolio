@@ -20,9 +20,9 @@ function Certificate() {
           }}
         >
           <img
-            src="/Ed&Ex/cer.gif"
+            src="/Ed&Ex/cer.png"
             alt="Education Icon"
-            className="w-14 h-14 object-contain"
+            className="w-10 h-10 object-contain"
           />
         </div>
         <h4

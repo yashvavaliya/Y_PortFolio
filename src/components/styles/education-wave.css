@@ -14,3 +14,11 @@
     display: none;
   }
 }
+
+@keyframes bounce-updown-strong {
+  0%, 100% { transform: translateY(-60%); }
+  50% { transform: translateY(20%); }
+}
+.bounce-updown-strong {
+  animation: bounce-updown-strong 1.2s infinite cubic-bezier(.68,-0.55,.27,1.55);
+}

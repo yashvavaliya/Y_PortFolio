@@ -97,7 +97,7 @@ function About() {
 
                 {/* Description Section */}
                 <div className="grow p-5 pb-[1%] pt-[10%]">
-                  <h3 className="text-xs sm:text-sm md:text-base text-black-600 dark:text-white font-sans">
+                  <h3 className="text-xs sm:text-sm md:text-base text-black-600 dark:text-white font-sans" style={{ fontFamily: "'Poppins', sans-serif" }}>
                     {ab.description}
                     <br />
                     <br />

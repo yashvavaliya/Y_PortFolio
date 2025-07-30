@@ -16,7 +16,7 @@ function Phone() {
             ? {
                 position: "absolute",
                 top: "50%",
-                left: "-160px",
+                left: "-150px",
                 transform: "translateY(10%)",
                 display: "block",
                 zIndex: 100,

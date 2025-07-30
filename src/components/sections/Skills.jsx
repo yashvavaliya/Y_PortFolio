@@ -42,66 +42,68 @@ function Skills() {
       icon: <IoLogoFirebase className="text-3xl text-orange-400" />,
       name: "Firebase",
     },
-    
   ];
 
   return (
-   <section
-      className="mt-[5%] px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s]"
-    >
-        
-
-
-      {/* Vertical Line and Circle */}
-        <div className="relative last:after:hidden after:absolute after:top-0 after:bottom-0 after:start-1/2 after:w-px after:-translate-x-1/2 after:bg-zinc-500 group-hover:after:bg-black dark:after:bg-zinc-700 dark:group-hover:after:bg-zinc-600 mb-8">
-          <div className="relative z-10 size-8 flex justify-center items-center">
-           
-          </div>
-        
-     
-
+    <section className="mt-[5%] px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s]">
       {/* Section Content */}
       <div className="relative z-10">
         {/* Section Title */}
-        <div className="relative mb-12">
-          <h2 className="text-5xl font-bold dark:text-white relative z-10" style={{ fontFamily: "'Amatic SC', cursive" }}>
+        <div className="relative flex items-center sm:mb-[1%]">
+          {/* Section Title */}
+          <h2
+            className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 dark:text-white"
+            style={{ fontFamily: "'Amatic SC', cursive" }}
+          >
             My Skill Set and <br /> Technologies
           </h2>
-          <div className="absolute top-6 left-[15%] w-24 h-24 bg-orange-500 rounded-full flex items-center justify-center animate-bounce-slow z-0">
-            <MdDraw className="text-white text-4xl" />
+          {/* Orange Circle - positioned after the heading */}
+          <div
+            className=" w-24 h-24 -ml-[18%] sm:-ml-[6%] mt-[20%] sm:mt-[8%] bg-orange-500 rounded-full flex items-center justify-center animate-bounce-slow z-0"
+            style={{ animationDuration: "8s" }}
+          >
+            <img
+              src="/Ed&Ex/pen1.png"
+              alt="Education Icon"
+              className="w-14 h-14 object-contain"
+            />
           </div>
         </div>
 
         {/* Description */}
-        <div className="max-w-3xl mb-20 text-gray-800 dark:text-gray-300 lg:ml-20 font-sans" style={{ fontFamily: "'Inter', sans-serif" }}>
-          <p className="mb-4 ">
+        <div
+          className="max-w-4xl mb-[3%] sm:mb-[5%] text-gray-800 dark:text-gray-300 lg:ml-20 ml-8 font-sans text-base sm:text-lg"
+          style={{ fontFamily: "'Poppins', sans-serif" }}
+        >
+            {/* Short Line After Circle - now positioned below the circle */}
+          <div className="absolute left-[3%] top-[9.5rem] sm:left-[3%] sm:top-[10.5rem] w-[1.5px] h-56 sm:h-44 bg-black dark:bg-white z-0"></div>
+
+          <p className="mb-4">
             I write clean, well-commented, composable and functional code,
             without language barriers as I can adapt and learn any new
             technology very quickly.
           </p>
-          <p>
+          <p className="">
             Here are some of the tech tools, frameworks, libraries and languages
-            I'm great at:
+            I'm great at-
           </p>
         </div>
 
-
         {/* Skills Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-5 mt-8  max-w-5xl">
+        <div className="flex flex-wrap gap-5 mt-8 max-w-5xl">
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="inline-flex items-center justify-between gap-x-1.5 py-4 px-3 hover:-translate-y-1.5 transition-translate duration-500 rounded-xl  bg-white dark:bg-gray-800 shadow-md p-4  "
+              className="flex items-center gap-x-4 py-3 px-5 bg-white dark:bg-gray-800 shadow-md rounded-lg min-w-[180px] mb-2"
+              style={{ minHeight: "56px" }}
             >
               {skill.icon}
-              <p className="mt-2 text-sm font-semibold text-gray-700 dark:text-gray-200">
+              <span className="text-base font-semibold text-gray-700 dark:text-gray-200">
                 {skill.name}
-              </p>
+              </span>
             </span>
           ))}
         </div>
-     
-      </div>
       </div>
     </section>
   );
