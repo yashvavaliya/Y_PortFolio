@@ -59,7 +59,7 @@ function Skills() {
           </h2>
           {/* Orange Circle - positioned after the heading */}
           <div
-            className=" w-24 h-24 -ml-[18%] sm:-ml-[6%] mt-[20%] sm:mt-[8%] bg-orange-500 rounded-full flex items-center justify-center animate-bounce-slow z-0"
+            className=" w-24 h-24 -ml-[13%] sm:-ml-[6%] mt-[20%] sm:mt-[8%] bg-orange-500 rounded-full flex items-center justify-center animate-bounce-slow z-0"
             style={{ animationDuration: "8s" }}
           >
             <img
