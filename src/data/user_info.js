@@ -194,6 +194,34 @@ const info = {
 
   // ============ FOOTER ============
   footer: "© 2025 Yash Vavaliya. Crafted by yours truly with ❤️",
+
+  // ============ SKILLS ============
+  skills: [
+    { icon: "/skill/yashvavaliya-react.png", name: "React" },
+    { icon: "/skill/yashvavaliya-reactnative.png", name: "ReactNative" },
+    { icon: "/skill/yashvavaliya-node1.png", name: "Node.js" },
+    { icon: "/skill/yashvavaliya-vuejs.svg", name: "Vue.js" },
+    { icon: "/skill/yashvavaliya-typescript.svg", name: "TypeScript" },
+    { icon: "/skill/yashvavaliya-html.svg", name: "HTML" },
+    { icon: "/skill/yashvavaliya-css.svg", name: "CSS" },
+    { icon: "/skill/yashvavaliya-js.svg", name: "JavaScript" },
+    { icon: "/skill/yashvavaliya-jquery.svg", name: "JQuery" },
+    { icon: "/skill/yashvavaliya-php.svg", name: "PHP" },
+    { icon: "/skill/yashvavaliya-c.svg", name: "C" },
+    { icon: "/skill/yashvavaliya-c++.svg", name: "C++" },
+    { icon: "/skill/yashvavaliya-java.svg", name: "Java" },
+    { icon: "/skill/yashvavaliya-python.svg", name: "Python" },
+    { icon: "/skill/yashvavaliya-django.svg", name: "Django" },
+    { icon: "/skill/yashvavaliya-github.svg", name: "Github" },
+    { icon: "/skill/yashvavaliya-mysql.png", name: "MySQL" },
+    { icon: "/skill/yashvavaliya-firebase.svg", name: "Firebase" },
+    { icon: "/skill/yashvavaliya-docker.svg", name: "Docker" },
+    { icon: "/skill/yashvavaliya-googlecloud.svg", name: "Google Cloud" },
+    { icon: "/skill/yashvavaliya-android.svg", name: "Android" },
+    // { icon: "/skill/yashvavaliya-tensorflow.svg", name: "Tensorflow" },
+    { icon: "/skill/yashvavaliya-postgresql.svg", name: "PostgreSQL" },
+    // { icon: "/skill/cockroachdb.svg", name: "CockroachDB" },
+  ],
 };
 
 export default info;

@@ -19,7 +19,7 @@ const MacbookMockup = () => {
   return (
     <section
       ref={sectionRef}
-      className={`mt-10 px-20 lg:px-24 transition-all duration-[4s] ease-in-out
+      className={`mt-10 px-20 lg:px-24 transition-all duration-[2s] ease-in-out
         ${inView ? 'translate-x-0 opacity-100' : 'translate-x-32 opacity-0'}`}
     >
       <div className="container">
