@@ -33,7 +33,7 @@ function Certificate() {
         </h4>
         <div
           className="bg-orange-500 mt-10"
-          style={{ width: "120px", height: "1.5px" }}
+          style={{ width: "100px", height: "1.5px" }}
         />
       </div>
 

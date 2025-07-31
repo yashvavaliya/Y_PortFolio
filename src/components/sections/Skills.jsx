@@ -72,21 +72,23 @@ function Skills() {
 
         {/* Description */}
         <div
-          className="max-w-4xl mb-[3%] sm:mb-[3 %] text-gray-800 dark:text-gray-300 lg:ml-20 ml-8 font-sans text-base sm:text-lg"
+          className="max-w-4xl mb-[3%] sm:mb-[3%] text-gray-800 dark:text-gray-300 lg:ml-6 ml-2 font-sans text-base sm:text-lg"
           style={{ fontFamily: "'Poppins', sans-serif" }}
         >
-            {/* Short Line After Circle - now positioned below the circle */}
-          <div className="absolute left-[3%] top-[9.5rem] sm:left-[3%] sm:top-[10.5rem] w-[1.5px] h-56 sm:h-44 bg-black dark:bg-white z-0"></div>
-
-          <p className="mb-4">
-            I write clean, well-commented, composable and functional code,
-            without language barriers as I can adapt and learn any new
-            technology very quickly.
-          </p>
-          <p className="">
-            Here are some of the tech tools, frameworks, libraries and languages
-            I'm great at-
-          </p>
+          {/* Wrap the description and line in a relative container */}
+          <div className="relative pl-4 sm:pl-8">
+            {/* Short Line - now positioned to the left of the description */}
+            <div className="absolute left-0 w-[2px] h-[110%] sm:h-[160%] sm:-top-[20%] -top-[10%] bg-black dark:bg-white rounded-full"></div>
+            <p className="mb-4">
+              I write clean, well-commented, composable and functional code,
+              without language barriers as I can adapt and learn any new
+              technology very quickly.
+            </p>
+            <p>
+              Here are some of the tech tools, frameworks, libraries and languages
+              I'm great at-
+            </p>
+          </div>
         </div>
 
         {/* Skills Grid */}

@@ -56,7 +56,7 @@ function Education() {
         </h4>
         <div
           className="bg-orange-500 mt-14 sm:mt-12 md:mt-13 lg:mt-12 xl:mt-12 2xl:mt-10"
-          style={{ width: "120px", height: "1.5px" }}
+          style={{ width: "100px", height: "1.5px" }}
         />
         <Lottie
           animationData={airplane}
