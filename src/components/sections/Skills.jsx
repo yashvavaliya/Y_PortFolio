@@ -78,11 +78,11 @@ function Skills() {
                 breakInside: "avoid",
               }}
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center sm:gap-4 gap-3">
                 <img
                   src={skill.icon}
                   alt={skill.name}
-                  className="w-10 h-10 object-contain"
+                  className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
                   loading="lazy"
                 />
                 <span className="font-medium text-gray-800 dark:text-gray-200 text-base" style={{ fontFamily: "'Poppins', sans-serif" }}>
