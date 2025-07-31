@@ -1,6 +1,8 @@
 import user_info from "../../data/user_info.js";
 import "../styles/education-wave.css";
 import { useRef, useEffect, useState } from "react";
+import Lottie from "lottie-react";
+import airplane from "../../../public/json/airplane.json";
 
 function Education() {
   const sectionRef = useRef(null);
@@ -56,10 +58,10 @@ function Education() {
           className="bg-orange-500 mt-14 sm:mt-12 md:mt-13 lg:mt-12 xl:mt-12 2xl:mt-10"
           style={{ width: "120px", height: "1.5px" }}
         />
-        <img
-          src="/Ed&Ex/plane_light.gif"
-          alt="Education Icon"
-          className="w-20 h-20 object-contain"
+        <Lottie
+          animationData={airplane}
+          loop
+          className="w-64 h-64 pr-1 sm:pb-5 sm:pr-8 object-contain"
         />
       </div>
 

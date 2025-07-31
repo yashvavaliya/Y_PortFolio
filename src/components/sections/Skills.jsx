@@ -45,7 +45,7 @@ function Skills() {
   ];
 
   return (
-    <section className="mt-[5%] px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s]">
+    <section className="mt-[5%] px-2 sm:px-4 md:px-8 mb-10 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s]">
       {/* Section Content */}
       <div className="relative z-10">
         {/* Section Title */}
@@ -72,7 +72,7 @@ function Skills() {
 
         {/* Description */}
         <div
-          className="max-w-4xl mb-[3%] sm:mb-[5%] text-gray-800 dark:text-gray-300 lg:ml-20 ml-8 font-sans text-base sm:text-lg"
+          className="max-w-4xl mb-[3%] sm:mb-[3 %] text-gray-800 dark:text-gray-300 lg:ml-20 ml-8 font-sans text-base sm:text-lg"
           style={{ fontFamily: "'Poppins', sans-serif" }}
         >
             {/* Short Line After Circle - now positioned below the circle */}
@@ -90,18 +90,22 @@ function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="flex flex-wrap gap-5 mt-8 max-w-5xl">
+        <div className="gap-4 space-y-3 sm:space-y-5 max-w-5xl">
           {skills.map((skill, index) => (
-            <span
+            <div
               key={index}
-              className="flex items-center gap-x-4 py-3 px-5 bg-white dark:bg-gray-800 shadow-md rounded-lg min-w-[180px] mb-2"
-              style={{ minHeight: "56px" }}
+              className="inline-block bg-white dark:bg-[#181818] rounded-lg shadow-sm px-3 sm:px-6 py-2 sm:py-4 transition hover:scale-105 mr-4 sm:mr-6"
+              style={{
+                breakInside: "avoid",
+              }}
             >
-              {skill.icon}
-              <span className="text-base font-semibold text-gray-700 dark:text-gray-200">
-                {skill.name}
-              </span>
-            </span>
+              <div className="flex items-center gap-4">
+                {skill.icon}
+                <span className="font-medium text-gray-800 dark:text-gray-200 text-base"  style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  {skill.name}
+                </span>
+              </div>
+            </div>
           ))}
         </div>
       </div>
