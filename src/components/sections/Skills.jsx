@@ -42,7 +42,8 @@ function Skills() {
         style={{ fontFamily: "'Poppins', sans-serif" }}
       >
         <div className="relative pl-4 sm:pl-8">
-          <div className="absolute left-0 w-[2px] h-[125%] sm:h-[180%] sm:-top-[30%] -top-[15%] bg-black dark:bg-white rounded-full"></div>
+          {/* Vertical line only for this block */}
+          <div className="absolute left-0 -top-8 w-[2px] h-[calc(130%-1.5rem)] sm:h-[calc(200%-1.5rem)] bg-black dark:bg-white rounded-full"></div>
           <p className="mb-4">
             I write clean, well-commented, composable and functional code,
             without language barriers as I can adapt and learn any new
@@ -71,7 +72,7 @@ function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
             transition={{ duration: 0.5, delay: 0.20 + index * 0.02 }}
-            className="inline-block bg-white dark:bg-[#181818] rounded-sm shadow-sm px-3 sm:px-6 py-2 sm:py-4 transition hover:scale-105 mr-4 sm:mr-6"
+            className="inline-block bg-white dark:bg-[#181818] rounded-sm shadow-sm px-3 sm:px-6 py-2 sm:py-2 transition hover:scale-105 mr-4 sm:mr-6"
             style={{
               breakInside: "avoid",
             }}
@@ -83,7 +84,7 @@ function Skills() {
                 className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
                 loading="lazy"
               />
-              <span className="font-medium text-gray-800 dark:text-gray-200  text-sm sm:text-base" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              <span className="font-medium text-gray-800 dark:text-gray-200  text-sm sm:text-lg" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 {skill.name}
               </span>
             </div>
