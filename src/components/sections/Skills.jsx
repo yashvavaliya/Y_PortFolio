@@ -55,7 +55,7 @@ function Skills() {
           {/* Wrap the description and line in a relative container */}
           <div className="relative pl-4 sm:pl-8">
             {/* Short Line - now positioned to the left of the description */}
-            <div className="absolute left-0 w-[2px] h-[110%] sm:h-[160%] sm:-top-[20%] -top-[10%] bg-black dark:bg-white rounded-full"></div>
+            <div className="absolute left-0 w-[2px] h-[125%] sm:h-[180%] sm:-top-[30%] -top-[15%] bg-black dark:bg-white rounded-full"></div>
             <p className="mb-4">
               I write clean, well-commented, composable and functional code,
               without language barriers as I can adapt and learn any new
@@ -69,7 +69,7 @@ function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="gap-4 space-y-3 sm:space-y-6 max-w-4xl">
+        <div className="gap-4 space-y-4 sm:space-y-6 max-w-4xl">
           {skills.map((skill, index) => (
             <div
               key={index}
@@ -78,7 +78,7 @@ function Skills() {
                 breakInside: "avoid",
               }}
             >
-              <div className="flex items-center sm:gap-4 gap-3">
+              <div className="flex items-center sm:gap-4 gap-4">
                 <img
                   src={skill.icon}
                   alt={skill.name}
