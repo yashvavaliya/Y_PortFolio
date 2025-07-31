@@ -1,47 +1,25 @@
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaGitAlt,
-} from "react-icons/fa6";
-import { IoLogoJavascript, IoLogoFirebase } from "react-icons/io5";
-import { BiLogoTypescript } from "react-icons/bi";
-import { DiGithubAlt } from "react-icons/di";
-import { SiExpress, SiNuxtdotjs, SiTailwindcss } from "react-icons/si";
-import { MdDraw } from "react-icons/md";
-
 function Skills() {
   const skills = [
-    { icon: <FaHtml5 className="text-3xl text-orange-600" />, name: "HTML" },
-    { icon: <FaCss3Alt className="text-3xl text-blue-500" />, name: "CSS" },
-    {
-      icon: <IoLogoJavascript className="text-3xl text-yellow-500" />,
-      name: "JavaScript",
-    },
-    {
-      icon: <BiLogoTypescript className="text-3xl text-blue-700" />,
-      name: "TypeScript",
-    },
-    { icon: <FaPython className="text-3xl text-yellow-600" />, name: "Python" },
-    { icon: <FaReact className="text-3xl text-cyan-500" />, name: "React" },
-    { icon: <SiExpress className="text-3xl text-gray-700" />, name: "Express" },
-    { icon: <FaNodeJs className="text-3xl text-green-600" />, name: "NodeJS" },
-    {
-      icon: <SiTailwindcss className="text-3xl text-sky-400" />,
-      name: "Tailwind",
-    },
-    {
-      icon: <SiNuxtdotjs className="text-3xl text-green-700" />,
-      name: "NuxtJS",
-    },
-    { icon: <FaGitAlt className="text-3xl text-red-600" />, name: "Git" },
-    { icon: <DiGithubAlt className="text-3xl text-black" />, name: "Github" },
-    {
-      icon: <IoLogoFirebase className="text-3xl text-orange-400" />,
-      name: "Firebase",
-    },
+    { icon: "/skill/yashvavaliya-android.svg", name: "Android" },
+    { icon: "/skill/yashvavaliya-java.svg", name: "Java" },
+    { icon: "/skill/yashvavaliya-flutter.svg", name: "Flutter" },
+    { icon: "/skill/yashvavaliya-dart.svg", name: "Dart" },
+    { icon: "/skill/yashvavaliya-python.svg", name: "Python" },
+    { icon: "/skill/yashvavaliya-django.svg", name: "Django" },
+    { icon: "/skill/yashvavaliya-js.svg", name: "JavaScript" },
+    { icon: "/skill/yashvavaliya-html.svg", name: "HTML" },
+    { icon: "/skill/yashvavaliya-css.svg", name: "CSS" },
+    { icon: "/skill/yashvavaliya-php.svg", name: "PHP" },
+    { icon: "/skill/yashvavaliya-jquery.svg", name: "JQuery" },
+    { icon: "/skill/yashvavaliya-github.svg", name: "Github" },
+    { icon: "/skill/yashvavaliya-firebase.svg", name: "Firebase" },
+    { icon: "/skill/yashvavaliya-docker.svg", name: "Docker" },
+    { icon: "/skill/yashvavaliya-mysql.svg", name: "MySQL" },
+    { icon: "/skill/yashvavaliya-flask.svg", name: "Flask" },
+    { icon: "/skill/yashvavaliya-tensorflow.svg", name: "Tensorflow" },
+    { icon: "/skill/yashvavaliya-googlecloud.svg", name: "Google Cloud" },
+    { icon: "/skill/yashvavaliya-postgresql.svg", name: "PostgreSQL" },
+    { icon: "/skill/cockroachdb.svg", name: "CockroachDB" },
   ];
 
   return (
@@ -50,7 +28,6 @@ function Skills() {
       <div className="relative z-10">
         {/* Section Title */}
         <div className="relative flex items-center sm:mb-[1%]">
-          {/* Section Title */}
           <h2
             className="relative text-5xl sm:text-6xl font-bold flex gap-2 items-center z-10 dark:text-white"
             style={{ fontFamily: "'Amatic SC', cursive" }}
@@ -92,18 +69,23 @@ function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="gap-4 space-y-3 sm:space-y-5 max-w-5xl">
+        <div className="gap-4 space-y-3 sm:space-y-6 max-w-4xl">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="inline-block bg-white dark:bg-[#181818] rounded-lg shadow-sm px-3 sm:px-6 py-2 sm:py-4 transition hover:scale-105 mr-4 sm:mr-6"
+              className="inline-block bg-white dark:bg-[#181818] rounded-sm shadow-sm px-3 sm:px-6 py-2 sm:py-4 transition hover:scale-105 mr-4 sm:mr-6"
               style={{
                 breakInside: "avoid",
               }}
             >
               <div className="flex items-center gap-4">
-                {skill.icon}
-                <span className="font-medium text-gray-800 dark:text-gray-200 text-base"  style={{ fontFamily: "'Poppins', sans-serif" }}>
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="w-10 h-10 object-contain"
+                  loading="lazy"
+                />
+                <span className="font-medium text-gray-800 dark:text-gray-200 text-base" style={{ fontFamily: "'Poppins', sans-serif" }}>
                   {skill.name}
                 </span>
               </div>
