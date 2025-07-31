@@ -67,16 +67,16 @@ function Skills() {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false, amount: 0.2 }}
-            transition={{ duration: 0.5, delay: 0.35 + index * 0.04 }}
+            transition={{ duration: 0.5, delay: 0.20 + index * 0.02 }}
             className="inline-block bg-white dark:bg-[#181818] rounded-sm shadow-sm px-3 sm:px-6 py-2 sm:py-4 transition hover:scale-105 mr-4 sm:mr-6"
             style={{
               breakInside: "avoid",
             }}
           >
-            <div className="flex items-center sm:gap-3 gap-1">
+            <div className="flex items-center sm:gap-3 gap-2">
               <img
                 src={skill.icon}
                 alt={skill.name}
