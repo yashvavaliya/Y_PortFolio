@@ -5,7 +5,7 @@ function Skills() {
   const skills = info.skills;
 
   return (
-    <section className="mt-[5%] px-2 sm:px-4 md:px-8 mb-10 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s]">
+    <section className="mt-[5%] px-2 sm:px-4 md:px-8 mb-10 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[1s]">
       {/* Section Title */}
       <motion.div
         className="relative flex items-center sm:mb-[1%]"

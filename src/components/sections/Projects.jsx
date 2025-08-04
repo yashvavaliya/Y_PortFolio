@@ -25,15 +25,35 @@ function Projects() {
   };
 
   return (
-    <section id="projects" className="relative pb-[10%]"> {/* Added padding-bottom */}
+     <section className="mt-[5%] px-0 sm:px-0 md:px-8 mb-10 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[1s]">
+      {" "}
 
-      <div className="relative px-6 py-20">
-        <h2 className="text-3xl dark:text-zinc-300 font-bold mb-2 z-10 lg:ml-20">
+      {/* Added padding-bottom */}
+
+      <div className="relative py-20 px-2">
+
+         {/* Vertical line above the heading */}
+          <div className="absolute -left-2 sm:left-0 -top-6 w-[2px] h-[calc(12%-1.5rem)] sm:h-[calc(20%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
+          
+         
+          
+        <h2
+          className="text-3xl dark:text-zinc-300 mb-2 z-10"
+          style={{
+            fontFamily: "'Poppins', 'Inter', sans-serif",
+            fontWeight: 700,
+          }}
+        >
           Yeah, I work hard <span role="img">💼</span>
         </h2>
-        <p className="text-orange-600 mb-10 z-10 lg:ml-20">
+        <p
+          className="text-orange-600 mb-16 z-10"
+          style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
+        >
           Each project is unique. Here are some of my works
         </p>
+
+         <div className="absolute -left-2 sm:left-0 top-[22%] sm:top-[30%] w-[2px] h-[calc(8%-1.5rem)] sm:h-[calc(10%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-8">
           {/* Left Side: Project Info */}

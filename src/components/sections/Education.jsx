@@ -22,7 +22,7 @@ function Education() {
   return (
     <section
       ref={sectionRef}
-      className={`mt-[5%] px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[2s] ease-in-out ${
+      className={`mt-[5%] px-2 sm:px-4 md:px-8 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[1s] ease-in-out ${
         inView ? "translate-x-0 opacity-100" : "-translate-x-32 opacity-0"
       }`}
     >

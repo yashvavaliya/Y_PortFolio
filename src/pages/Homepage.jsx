@@ -16,6 +16,7 @@ import Skills from "../components/sections/Skills.jsx";
 import DisplayLoad from "./DisplayLoad.jsx";
 import Education from "../components/sections/Education.jsx";
 import Experience from "../components/sections/Experience.jsx";
+// import Helicopter from "../components/sections/Helicopter.jsx";
 
 function Homepage() {
   const { theme, switchTheme } = useContext(AppContext);
@@ -51,7 +52,7 @@ function Homepage() {
   // }
 
   return (
-    <div className="bg-white dark:bg-zinc-900">
+    <div className="bg-zing-100 dark:bg-zinc-900">
       <div className="xl:w-[1350px] md:mx-auto h-full border-x border-zinc-100 dark:border-zinc-800  bg-zinc-100 dark:bg-zinc-950">
         <ToggleTheme switchTheme={switchTheme} />
 
@@ -64,6 +65,7 @@ function Homepage() {
         <Experience />
         <Certificates />
         <Skills />
+        {/* <Helicopter /> */}
         <Projects />
         {/* <LaptopTyping /> */}
         <Contact />

@@ -63,7 +63,7 @@ const info = {
       description:
         "Developed to learn full-stack web development using Nuxt3, Express, and PostgreSQL in fulfillment of my internship requirements.",
       technologies: "Nuxt, Tailwind, Express, PostgreSQL",
-      img: "/project/p2.jpg",
+       img: "/project/AI_Trip_Planner1.jpg",
       github: "https://github.com/dsbalico/YouShare",
       link: "https://github.com/dsbalico/YouShare",
     },
@@ -73,7 +73,7 @@ const info = {
       description:
         "Draw & Classify is a web application designed to test my machine learning model, which classifies drawn letters, digits, or shapes.",
       technologies: "React, Tailwind, Tensorflow",
-      img: "/project/p3.jpg",
+       img: "/project/AI_Trip_Planner1.jpg",
       github: "https://github.com/dsbalico/letter-digit-shape-classification",
       link: "https://letterdigitshape-classification.netlify.app/",
     },
@@ -83,7 +83,7 @@ const info = {
       description:
         "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
       technologies: "React, Tailwind, Firebase",
-      img: "/project/p4.jpg",
+       img: "/project/AI_Trip_Planner1.jpg",
       github: "https://github.com/dsbalico/chatroom",
       link: "https://thechatroom.netlify.app/",
     },
@@ -93,7 +93,7 @@ const info = {
       description:
         "Sudoku Solver is a web application that can generate or solve sudoku problems using simulated annealing, an optimization algorithm.",
       technologies: "React, Tailwind, TypeScript",
-      img: "/project/p5.jpg",
+       img: "/project/AI_Trip_Planner1.jpg",
       github:
         "https://github.com/dsbalico/sudoku-solver-using-simulated-annealing",
       link: "https://sudoku-solver-sa.netlify.app/",
@@ -104,7 +104,7 @@ const info = {
       description:
         "Probability Pick is a PCSO Lotto Number Generator that calculates the likelihood of selecting winning numbers based on historical draw data.",
       technologies: "React, Tailwind, Flask",
-      img: "/public/project/p6.jpg",
+       img: "/project/AI_Trip_Planner1.jpg",
       github: "https://github.com/dsbalico/pcso-lotto-number-generator",
       link: "https://probability-pick.netlify.app/",
     },
@@ -206,6 +206,7 @@ const info = {
     { icon: "/skill/yashvavaliya-css.svg", name: "CSS" },
     { icon: "/skill/yashvavaliya-js.svg", name: "JavaScript" },
     { icon: "/skill/yashvavaliya-jquery.svg", name: "JQuery" },
+    { icon: "/skill/yashvavaliya-boostrap.svg", name: "Bootstrap" },
     { icon: "/skill/yashvavaliya-php.svg", name: "PHP" },
     { icon: "/skill/yashvavaliya-c.svg", name: "C" },
     { icon: "/skill/yashvavaliya-c++.svg", name: "C++" },
@@ -215,6 +216,7 @@ const info = {
     { icon: "/skill/yashvavaliya-github.svg", name: "Github" },
     { icon: "/skill/yashvavaliya-mysql.png", name: "MySQL" },
     { icon: "/skill/yashvavaliya-firebase.svg", name: "Firebase" },
+    { icon: "/skill/yashvavaliya-mongodb.png", name: "MongoDB" },
     { icon: "/skill/yashvavaliya-docker.svg", name: "Docker" },
     { icon: "/skill/yashvavaliya-googlecloud.svg", name: "Google Cloud" },
     { icon: "/skill/yashvavaliya-android.svg", name: "Android" },

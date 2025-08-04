@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import user_info from "../../data/user_info.js";
 import Lottie from "lottie-react";
-import animationData from "./../../../public/json/homeimage.json";
+// import animationData from "./../../../public/json/homeimage.json";
 
 function Hero() {
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
@@ -23,11 +23,7 @@ function Hero() {
         <div className="self-center flex flex-col lg:flex-row w-full">
           {/* Left Side */}
           <div className="hs-tooltip [--placement:right] w-full lg:w-[60%] hs-tooltip-toggle">
-            <img
-              src={user_info.main.photo}
-              className="rounded-full mb-6 lg:hidden"
-              alt="yash vavaliya Picture"
-            />
+            {/* Removed small screen image */}
             <span
               className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity  inline-block absolute invisible z-10 py-1 px-2 bg-white border dark:border-zinc-800 dark:bg-zinc-950 text-xs font-medium text-zinc-950 dark:text-white rounded shadow-sm"
               role="tooltip"
@@ -59,12 +55,12 @@ function Hero() {
           </div>
           {/* Right Side: Lottie Animation */}
           <div className="hidden lg:flex relative w-[450px] h-[450px] items-center justify-center ml-10">
-            <Lottie
+            {/* <Lottie
               animationData={animationData}
               loop={true}
               autoplay={true}
               style={{ width: 400, height: 400 }}
-            />
+            /> */}
           </div>
         </div>
       </div>
@@ -76,5 +72,4 @@ function Hero() {
     </section>
   );
 }
-
 export default Hero;
