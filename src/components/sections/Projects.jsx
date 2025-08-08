@@ -30,7 +30,7 @@ function Projects() {
       {/* Added padding-bottom */}
       <div className="relative py-20 px-2">
         {/* Vertical line above the heading */}
-        <div className="absolute -left-2 sm:left-0 -top-6 w-[2px] h-[calc(12%-1.5rem)] sm:h-[calc(20%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
+        <div className="absolute -left-2 sm:left-0 -top-6 w-[2px] h-[calc(10%-1.5rem)] sm:h-[calc(20%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
 
         <h2
           className="text-3xl dark:text-zinc-300 mb-2 z-10"
