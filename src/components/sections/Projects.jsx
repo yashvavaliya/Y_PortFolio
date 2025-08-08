@@ -30,7 +30,7 @@ function Projects() {
       {/* Added padding-bottom */}
       <div className="relative py-20 px-2">
         {/* Vertical line above the heading */}
-        <div className="absolute -left-2 sm:left-0 -top-6 w-[2px] h-[calc(10%-1.5rem)] sm:h-[calc(20%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
+        <div className="absolute -left-2 sm:left-0 -top-6 w-[2px] h-[calc(10%-1.5rem)] sm:h-[calc(15%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
 
         <h2
           className="text-3xl dark:text-zinc-300 mb-2 z-10"
@@ -47,8 +47,6 @@ function Projects() {
         >
           Each project is unique. Here are some of my works
         </p>
-
-        <div className="absolute -left-2 sm:left-0 top-[22%] sm:top-[30%] w-[2px] h-[calc(8%-1.5rem)] sm:h-[calc(10%-1.5rem)] bg-black dark:bg-white rounded-full ml-6"></div>
 
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-8">
           {/* Left Side: Project Info */}
