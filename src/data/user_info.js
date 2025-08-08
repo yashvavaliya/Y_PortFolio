@@ -1,3 +1,5 @@
+import { link } from "framer-motion/client";
+
 const info = {
 
   // ============ LOGO DETAILS ============
@@ -160,29 +162,77 @@ const info = {
   // ============ CERTIFICATES ============
   certificates: [
     {
-      title: "Foundations of Cybersecurity Certificate",
-      description: "Provided by Coursera & Authorized by IBM",
-      icon: "free",
-      link: "#",
+      name: "Responsive Web Design",
+      description: "Learn the languages that developers use to build webpages: HTML for content, and CSS for design.",
+      duration: "May 2022",
+      logo: "freecodecamp", // Use a string to identify the logo
+      photo: "/certificate/wed-design.png", // Path to certificate image
+      link: "https://www.freecodecamp.org/certification/yashvavaliya/responsive-web-design",
+      lines: [
+        "Completed all modules",
+        "Hands-on labs",
+        "Final assessment passed"
+      ]
     },
     {
-      title: "Git and GitHub Essentials",
-      description: "Provided by Coursera & Authorized by IBM",
-      icon: "",
-      link: "#",
+      name: "JS Algorithms and DS",
+      description: "learn the JavaScript fundamentals like variables, arrays, objects, loops, functions, the DOM and more.",
+      duration: "May 2024",
+      logo: "freecodecamp",
+      photo: "/certificate/js-algo-ds.png",
+      lines: [
+        "Repository management",
+        "Branching strategies",
+        "Pull requests and reviews"
+      ]
+    },
+     {
+      name: "Front End Development Libraries",
+      description: "Learn how to style your site quickly with Bootstrap. You'll also learn how to add logic to your CSS styles and extend them with Sass. ",
+      duration: "June 2024",
+      logo: "freecodecamp", // Use a string to identify the logo
+      photo: "/certificate/fe-dev-lib.png", // Path to certificate image
+      lines: [
+        "Completed all modules",
+        "Hands-on labs",
+        "Final assessment passed"
+      ]
     },
     {
-      title: "Crash Course on Python Certificate",
-      description: "Provided by Coursera & Authorized by Google",
-      icon: "google",
-      link: "",
+      name: "Data Visualization",
+      description: "Build charts, graphs, and maps to present different types of data with the D3.js library. learn about JSON, and how to work with data online using an API",
+      duration: "June 2024",
+      logo: "freecodecamp",
+      photo: "/certificate/data-visual.png",
+      lines: [
+        "Repository management",
+        "Branching strategies",
+        "Pull requests and reviews"
+      ]
+    }, {
+      name: "Foundations of Cybersecurity",
+      description: "Learned the basics of cybersecurity, including risk management and security controls.",
+      duration: "Jan 2024 - Mar 2024",
+      logo: "ibm", // Use a string to identify the logo
+      photo: "/images/cert_ibm.png", // Path to certificate image
+      lines: [
+        "Completed all modules",
+        "Hands-on labs",
+        "Final assessment passed"
+      ]
     },
     {
-      title: "Technical Support Fundamentals Certificate",
-      description: "Provided by Coursera & Authorized by Google",
-      icon: "ibm",
-      link: "",
-    },
+      name: "Git and GitHub Essentials",
+      description: "Mastered version control and collaboration using Git and GitHub.",
+      duration: "Apr 2024 - May 2024",
+      logo: "meta",
+      photo: "/images/cert_meta.png",
+      lines: [
+        "Repository management",
+        "Branching strategies",
+        "Pull requests and reviews"
+      ]
+    }
   ],
 
   // ============ CONTACT ============

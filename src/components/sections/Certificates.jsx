@@ -1,5 +1,7 @@
 import user_info from "../../data/user_info.js";
 import "../styles/education-wave.css";
+import CertificateCard from "./CertificteCard"; // <-- Import your card
+import { motion } from "framer-motion";
 
 function Certificate() {
   return (
@@ -37,13 +39,27 @@ function Certificate() {
         />
       </div>
 
+      {/* Description */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false, amount: 0.1 }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+        className="max-w-4xl mb-[3%] sm:mb-[3%] text-gray-800 dark:text-gray-300 lg:ml-6 ml-2 font-sans text-base sm:text-lg"
+        style={{ fontFamily: "'Poppins', sans-serif", marginBottom: "2.5rem" }}
+      >
+        <div className="relative pl-4 sm:pl-8">
+          {/* Vertical line only for this block */}
+          <div className="absolute left-0 -top-8 w-[2px] h-[calc(130%-1.5rem)] sm:h-[calc(200%-1.5rem)] bg-black dark:bg-white rounded-full"></div>
+          <p className="mb-4">
+            Here are some of the professional certifications I've completed to strengthen my technical foundation and build real-world skills.
+          </p>
+          <p>Earned tech certifications from Meta, Google, IBM, NPTEL, and more - </p>
+        </div>
+      </motion.div>
 
-          {/* Certificate template  */}
-
-
-
-
-
+      {/* Certificate template */}
+      <CertificateCard style={{ marginTop: "2.5rem" }} />
     </section>
   );
 }

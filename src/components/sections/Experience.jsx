@@ -67,7 +67,7 @@ function Experience() {
             return (
               <div
                 key={index}
-                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square w-40 h-40 top-4 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
+                className={`bg-white dark:bg-zinc-900 shadow-lg w-56 h-32 top-4 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
                 style={{ position: "relative", zIndex: 2, overflow: "hidden" }}
               >
                 {/* School Logo */}
@@ -116,30 +116,9 @@ function Experience() {
             return (
               <div
                 key={index}
-                className={`bg-white dark:bg-zinc-900 shadow-lg aspect-square sm:w-56 sm:h-56 md:w-64 md:h-64 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
+                className={`bg-white dark:bg-zinc-900 shadow-lg sm:w-72 sm:h-40 md:w-80 md:h-44 flex-shrink-0 flex flex-col justify-center items-center rounded-xl duration-500 ${rotate} floating-card`}
                 style={{ position: "relative", zIndex: 2, overflow: "hidden" }}
               >
-                {/* School Logo */}
-                <img
-                  className="absolute sm:top-5 sm:w-12 sm:h-12 object-cover z-10"
-                  src={exp.image}
-                  alt="Company Logo"
-                />
-                {/* Company Name & Position */}
-                <div className="flex-1 flex flex-col justify-center items-center sm:px-4 text-center sm:mt-6">
-                  <h3 className="font-semibold sm:text-lg text-zinc-600 dark:text-zinc-400 sm:mt-2 sm:mb-2 font-sans">
-                    {exp.company}
-                  </h3>
-                  <p className="font-normal sm:text-xs text-zinc-600 dark:text-zinc-400 font-sans">
-                    {exp.position}
-                  </p>
-                </div>
-                {/* Duration: bottom center */}
-                <div className="absolute hidden sm:flex bottom-4 left-1/2 -translate-x-1/2 w-full justify-center">
-                  <span className="text-xs font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-2 py-1 rounded shadow">
-                    {exp.duration}
-                  </span>
-                </div>
                 {/* Wave SVG background */}
                 <div className="absolute overflow-hidden top-[-10px] left-0 w-full z-0">
                   <svg
@@ -154,6 +133,28 @@ function Experience() {
                     ></path>
                   </svg>
                 </div>
+                {/* Logo: top left */}
+                <img
+                  className="absolute sm:top-4 sm:left-8 sm:w-12 sm:h-12 object-cover z-10"
+                  src={exp.image}
+                  alt="Company Logo"
+                />
+                {/* Duration: top right */}
+                <div className="absolute hidden sm:flex top-4 right-4 justify-end">
+                  <span className="text-xs font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-2 py-1 rounded shadow">
+                    {exp.duration}
+                  </span>
+                </div>
+                {/* Company Name & Position */}
+                <div className="flex-1 flex flex-col justify-center items-center sm:px-4 text-center sm:mt-6 pt-12">
+                  <h3 className="font-semibold sm:text-lg text-zinc-600 dark:text-zinc-400 sm:mt-2 sm:mb-2 font-sans">
+                    {exp.company}
+                  </h3>
+                  <p className="font-normal sm:text-xs text-zinc-600 dark:text-zinc-400 font-sans">
+                    {exp.position}
+                  </p>
+                </div>
+                
               </div>
             );
           })}
