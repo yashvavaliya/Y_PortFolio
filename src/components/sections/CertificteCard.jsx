@@ -62,7 +62,7 @@ const CertificateCard = () => {
               {/* Up arrow for mobile */}
               <button className="show-arrow-mobile" aria-label="Show details">
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 14l5-5 5 5" stroke="#f44336" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M7 14l5-5 5 5" stroke="#f49b36ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </button>
               {/* Hover panel */}
