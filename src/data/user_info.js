@@ -53,7 +53,7 @@ const info = {
     {
       title: "AI Trip Planner",
       description:
-        "AI Trip Planner is a web app that uses artificial intelligence to help users plan their trips more efficiently.",
+        "AI Trip Planner is a web app that uses artificial intelligence to help users plan their trips more efficiently.AI Trip Planner is a web app that uses artificial intelligence to help users plan their trips more efficiently.",
       technologies: "React Native, TypeScript, Gemini, Firebase, Google Maps API",
       img: "/project/AI_Trip_Planner1.jpg",
       github: "https://github.com/dsbalico/pseudocode-to-c",
@@ -180,14 +180,15 @@ const info = {
       duration: "May 2024",
       logo: "freecodecamp",
       photo: "/certificate/js-algo-ds.png",
+      link: "https://www.freecodecamp.org/certification/yashvavaliya/responsive-web-design",
       lines: [
-        "Repository management",
-        "Branching strategies",
-        "Pull requests and reviews"
+        "Completed all modules",
+        "Hands-on labs",
+        "Final assessment passed"
       ]
     },
      {
-      name: "Front End Development Libraries",
+      name: "Front End Libraries",
       description: "Learn how to style your site quickly with Bootstrap. You'll also learn how to add logic to your CSS styles and extend them with Sass. ",
       duration: "June 2024",
       logo: "freecodecamp", // Use a string to identify the logo
@@ -214,7 +215,7 @@ const info = {
       description: "Learned the basics of cybersecurity, including risk management and security controls.",
       duration: "Jan 2024 - Mar 2024",
       logo: "ibm", // Use a string to identify the logo
-      photo: "/images/cert_ibm.png", // Path to certificate image
+      photo: "/certificate/data-visual.png",
       lines: [
         "Completed all modules",
         "Hands-on labs",
@@ -226,7 +227,31 @@ const info = {
       description: "Mastered version control and collaboration using Git and GitHub.",
       duration: "Apr 2024 - May 2024",
       logo: "meta",
-      photo: "/images/cert_meta.png",
+      photo: "/certificate/data-visual.png",
+      lines: [
+        "Repository management",
+        "Branching strategies",
+        "Pull requests and reviews"
+      ]
+    },
+     {
+      name: "Foundations of Cybersecurity",
+      description: "Learned the basics of cybersecurity, including risk management and security controls.",
+      duration: "Jan 2024 - Mar 2024",
+      logo: "ibm", // Use a string to identify the logo
+      photo: "/certificate/data-visual.png",
+      lines: [
+        "Completed all modules",
+        "Hands-on labs",
+        "Final assessment passed"
+      ]
+    },
+    {
+      name: "Git and GitHub Essentials",
+      description: "Mastered version control and collaboration using Git and GitHub.",
+      duration: "Apr 2024 - May 2024",
+      logo: "meta",
+      photo: "/certificate/data-visual.png",
       lines: [
         "Repository management",
         "Branching strategies",

@@ -51,9 +51,15 @@ function Projects() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-8">
           {/* Left Side: Project Info */}
           <div>
-            <h2 className="text-3xl font-bold mb-2 text-orange-600">
+            <h2
+              className="text-3xl font-bold mb-2 text-orange-600"
+              style={{
+                fontFamily: "'Playfair Display', 'Poppins', 'Inter', serif, sans-serif",
+                fontWeight: 700,
+              }}
+            >
               0{currentIndex + 1}/
-              <span className="text-gray-800 dark:text-white">{total}</span>
+              <span className="text-gray-800 dark:text-white">0{total}</span>
             </h2>
 
             {/* Card with easing effect */}

@@ -24,7 +24,7 @@ function Homepage() {
 
   const [isLoading, setIsLoading] = useState(true); // State to control loading
   const [currentMessageIndex, setCurrentMessageIndex] = useState(0); // State to control message display
-  const messages = ["Hello! 👦","કેમ છો? 🤝","Welcome ☺️","नमस्ते 👋","GUTEN TAG"]; // Messages to display during loading
+  const messages = ["HELLO!👦","કેમ છો?🤝","WELCOME☺️","नमस्ते👋","GUTEN TAG"]; // Messages to display during loading
   useEffect(() => {
     // Cycle through messages every 1 second
     const messageInterval = setInterval(() => {
@@ -44,10 +44,15 @@ function Homepage() {
 
   // if (isLoading) {
   //   return (
-  //     <DisplayLoad
-  //       message={messages[currentMessageIndex]}
-  //       progress={((currentMessageIndex + 1) / messages.length) * 100}
-  //     />
+  //     <div style={{display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "60vh"}}>
+  //       {/* Spinner Animation */}
+  //       <div className="loading-spinner" />
+  //       {/* Loading Message */}
+  //       <DisplayLoad
+  //         message={messages[currentMessageIndex]}
+  //         progress={((currentMessageIndex + 1) / messages.length) * 100}
+  //       />
+  //     </div>
   //   );
   // }
 

@@ -152,7 +152,7 @@ function Phone() {
                       fontSize: isSmall ? "18px" : "25px",
                     }}
                   >
-                    ચાલો........!
+                    કેમ છો?
                   </span>
                   <span style={{ color: "#ff9800" }}>SURAT</span>
                   <a

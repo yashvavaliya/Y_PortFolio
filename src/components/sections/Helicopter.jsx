@@ -108,32 +108,14 @@ export default function Helicopter() {
   }, []);
 
   return (
-    <div className="helicopter-container">
-      <div className="scene">
-        <div className="helicopter__tilter">
-          <div className="helicopter__wrapper">
-            <div className="helicopter">
-              <div className="helicopter__rotor">
-                <div className="cuboid cuboid--rotor">
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                </div>
-              </div>
-              <div className="helicopter__cockpit">
-                <div className="cuboid cuboid--cockpit">
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                </div>
-                <div className="helicopter__base-light">
-                  <div className="cuboid cuboid--base-light cuboid--light">
+    <div className="helicopter-area">
+      <div className="helicopter-container">
+        <div className="scene">
+          <div className="helicopter__tilter">
+            <div className="helicopter__wrapper">
+              <div className="helicopter">
+                <div className="helicopter__rotor">
+                  <div className="cuboid cuboid--rotor">
                     <div className="cuboid__side"></div>
                     <div className="cuboid__side"></div>
                     <div className="cuboid__side"></div>
@@ -142,9 +124,17 @@ export default function Helicopter() {
                     <div className="cuboid__side"></div>
                   </div>
                 </div>
-                <div className="helicopter__chair">
-                  <div className="helicopter__chair-back">
-                    <div className="cuboid cuboid--chair">
+                <div className="helicopter__cockpit">
+                  <div className="cuboid cuboid--cockpit">
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                  </div>
+                  <div className="helicopter__base-light">
+                    <div className="cuboid cuboid--base-light cuboid--light">
                       <div className="cuboid__side"></div>
                       <div className="cuboid__side"></div>
                       <div className="cuboid__side"></div>
@@ -153,8 +143,30 @@ export default function Helicopter() {
                       <div className="cuboid__side"></div>
                     </div>
                   </div>
-                  <div className="helicopter__chair-bottom">
-                    <div className="cuboid cuboid--chair">
+                  <div className="helicopter__chair">
+                    <div className="helicopter__chair-back">
+                      <div className="cuboid cuboid--chair">
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                      </div>
+                    </div>
+                    <div className="helicopter__chair-bottom">
+                      <div className="cuboid cuboid--chair">
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                        <div className="cuboid__side"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="helicopter__dashboard">
+                    <div className="cuboid cuboid--dashboard">
                       <div className="cuboid__side"></div>
                       <div className="cuboid__side"></div>
                       <div className="cuboid__side"></div>
@@ -164,8 +176,8 @@ export default function Helicopter() {
                     </div>
                   </div>
                 </div>
-                <div className="helicopter__dashboard">
-                  <div className="cuboid cuboid--dashboard">
+                <div className="helicopter__tail">
+                  <div className="cuboid cuboid--tail">
                     <div className="cuboid__side"></div>
                     <div className="cuboid__side"></div>
                     <div className="cuboid__side"></div>
@@ -174,123 +186,113 @@ export default function Helicopter() {
                     <div className="cuboid__side"></div>
                   </div>
                 </div>
+                <div className="helicopter__fin">
+                  <div className="cuboid cuboid--fin">
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                  </div>
+                  <div className="helicopter__triblade"></div>
+                  <div className="helicopter__tail-light">
+                    <div className="cuboid cuboid--tail-light cuboid--light">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="helicopter__stabilizer">
+                  <div className="cuboid cuboid--stabilizer">
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                  </div>
+                </div>
+                <div className="helicopter__skids">
+                  <div className="helicopter__skid--left helicopter__skid">
+                    <div className="cuboid cuboid--skid">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                  <div className="helicopter__skid--right helicopter__skid" >
+                    <div className="cuboid cuboid--skid">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="helicopter__wing">
+                  <div className="cuboid cuboid--wing">
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                    <div className="cuboid__side"></div>
+                  </div>
+                  <div className="helicopter__wing-light helicopter__wing-light--left">
+                    <div className="cuboid cuboid--wing-light cuboid--light">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                  <div className="helicopter__wing-light helicopter__wing-light--right">
+                    <div className="cuboid cuboid--wing-light cuboid--light">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="helicopter__launchers">
+                  <div className="helicopter__launcher helicopter__launcher--left" ref={leftLauncherRef}>
+                    <div className="cuboid cuboid--launcher">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                  <div className="helicopter__launcher helicopter__launcher--right" ref={rightLauncherRef}>
+                    <div className="cuboid cuboid--launcher">
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                      <div className="cuboid__side"></div>
+                    </div>
+                  </div>
+                </div>
+                <div className="helicopter__blades"></div>
               </div>
-              <div className="helicopter__tail">
-                <div className="cuboid cuboid--tail">
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                </div>
-              </div>
-              <div className="helicopter__fin">
-                <div className="cuboid cuboid--fin">
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                </div>
-                <div className="helicopter__triblade"></div>
-                <div className="helicopter__tail-light">
-                  <div className="cuboid cuboid--tail-light cuboid--light">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="helicopter__stabilizer">
-                <div className="cuboid cuboid--stabilizer">
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                </div>
-              </div>
-              <div className="helicopter__skids">
-                <div className="helicopter__skid--left helicopter__skid">
-                  <div className="cuboid cuboid--skid">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-                <div className="helicopter__skid--right helicopter__skid" >
-                  <div className="cuboid cuboid--skid">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="helicopter__wing">
-                <div className="cuboid cuboid--wing">
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                  <div className="cuboid__side"></div>
-                </div>
-                <div className="helicopter__wing-light helicopter__wing-light--left">
-                  <div className="cuboid cuboid--wing-light cuboid--light">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-                <div className="helicopter__wing-light helicopter__wing-light--right">
-                  <div className="cuboid cuboid--wing-light cuboid--light">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="helicopter__launchers">
-                <div className="helicopter__launcher helicopter__launcher--left" ref={leftLauncherRef}>
-                  <div className="cuboid cuboid--launcher">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-                <div className="helicopter__launcher helicopter__launcher--right" ref={rightLauncherRef}>
-                  <div className="cuboid cuboid--launcher">
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                    <div className="cuboid__side"></div>
-                  </div>
-                </div>
-              </div>
-              <div className="helicopter__blades"></div>
             </div>
           </div>
         </div>

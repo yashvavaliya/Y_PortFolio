@@ -14,7 +14,6 @@
     display: none;
   }
 }
-
 @keyframes bounce-updown-strong {
   0%, 100% { transform: translateY(-60%); }
   50% { transform: translateY(20%); }

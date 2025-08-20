@@ -48,9 +48,9 @@ function Certificate() {
         className="max-w-4xl mb-[3%] sm:mb-[3%] text-gray-800 dark:text-gray-300 lg:ml-6 ml-2 font-sans text-base sm:text-lg"
         style={{ fontFamily: "'Poppins', sans-serif", marginBottom: "2.5rem" }}
       >
-        <div className="relative pl-4 sm:pl-8">
+        <div className="relative pl-4 sm:pl-8 ">
           {/* Vertical line only for this block */}
-          <div className="absolute left-0 -top-8 w-[2px] h-[calc(130%-1.5rem)] sm:h-[calc(200%-1.5rem)] bg-black dark:bg-white rounded-full"></div>
+          {/* <div className="absolute left-0 -top-6 w-[2px] h-[calc(140%-1.5rem)] sm:h-[calc(210%-1.5rem)] bg-black dark:bg-white rounded-full"></div> */}
           <p className="mb-4">
             Here are some of the professional certifications I've completed to strengthen my technical foundation and build real-world skills.
           </p>
