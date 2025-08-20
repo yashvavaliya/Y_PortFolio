@@ -141,7 +141,12 @@ const info = {
       duration: "2023 - present",
       image: "Ed&Ex/ppsu.png",
     },
-    
+     {
+      school: "SCC INFOTECH LLP",
+      degree: "Backend Intern",
+      duration: "May 2025 - present(6 Months)",
+      image: "Ed&Ex/scc.png",
+    },
   ],
 
   // ============ EXPERIENCE ============

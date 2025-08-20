@@ -67,7 +67,7 @@ function Homepage() {
         {/* </div> */}
         <About/>
         <Education />
-        <Experience />
+        {/* <Experience /> */}
         <Certificates />
         <Skills />
         {/* <Helicopter /> */}

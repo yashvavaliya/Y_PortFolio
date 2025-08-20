@@ -44,8 +44,10 @@ const CertificateCard = () => {
               <div className="logo-top-right">
                 {logos[cert.logo]}
               </div>
+              
             </div>
-            <div className="detail">
+            
+            <div className="detail" style={{ position: "relative" }}>
               <h3 style={{ fontFamily: "'Poppins', sans-serif" }} className="text-[18px]">
                 {cert.name}
               </h3>
@@ -59,12 +61,7 @@ const CertificateCard = () => {
                   {cert.duration}
                 </span>
               </div>
-              {/* Up arrow for mobile */}
-              <button className="show-arrow-mobile" aria-label="Show details">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 14l5-5 5 5" stroke="#f49b36ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
+             
               {/* Hover panel */}
               <div className="detail-hover-panel">
                 <div className="font-normal text-[14px] text-zinc-600 py-4">
@@ -80,6 +77,12 @@ const CertificateCard = () => {
                 </a>  
               </div>
             </div>
+             {/* Up arrow for mobile */}
+              <button className="show-arrow-mobile" aria-label="Show details">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 14l5-5 5 5" stroke="#f49b36ff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
           </SwiperSlide>
         ))}
       </Swiper>
