@@ -46,10 +46,10 @@ const CertificateCard = () => {
               </div>
             </div>
             <div className="detail">
-              <h3 style={{ fontFamily: "'Poppins', sans-serif" }} className="text-[16px]">
+              <h3 style={{ fontFamily: "'Poppins', sans-serif" }} className="text-[18px]">
                 {cert.name}
               </h3>
-              <ul style={{ listStyleType: "disc", paddingLeft: "1px", margin: "1rem 0", color: "#555", textAlign: "left", fontFamily: "'Poppins', sans-serif" }} className="text-[14px]" >
+              <ul style={{ listStyleType: "disc", paddingLeft: "1px", margin: "1rem 0", color: "#555", textAlign: "left", fontFamily: "'Poppins', sans-serif" }} className="text-sm font-medium" >
                 {cert.lines.map((line, i) => (
                   <li key={i}>{line}</li>
                 ))}
@@ -58,14 +58,19 @@ const CertificateCard = () => {
                 <span className="text-xs font-medium uppercase text-orange-500 dark:text-white bg-white/80 dark:bg-zinc-900/80 px-3 py-1 rounded shadow" style={{textAlign: "right"}}>
                   {cert.duration}
                 </span>
-                
               </div>
+              {/* Up arrow for mobile */}
+              <button className="show-arrow-mobile" aria-label="Show details">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                  <path d="M7 14l5-5 5 5" stroke="#f44336" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
               {/* Hover panel */}
               <div className="detail-hover-panel">
                 <div className="font-normal text-[14px] text-zinc-600 py-4">
                   {cert.description}
                 </div>
-               <a
+                <a
                   href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"

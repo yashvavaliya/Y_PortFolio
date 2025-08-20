@@ -122,4 +122,25 @@
   justify-content: center;
 }
 
+.show-arrow-mobile {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .show-arrow-mobile {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    background: transparent;
+    border: none;
+    padding: 0;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .show-arrow-mobile svg {
+    display: block;
+  }
+}
+
 

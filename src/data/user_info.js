@@ -211,7 +211,7 @@ const info = {
         "Pull requests and reviews"
       ]
     }, {
-      name: "Foundations of Cybersecurity",
+      name: "Cybersecurity",
       description: "Learned the basics of cybersecurity, including risk management and security controls.",
       duration: "Jan 2024 - Mar 2024",
       logo: "ibm", // Use a string to identify the logo
@@ -235,7 +235,7 @@ const info = {
       ]
     },
      {
-      name: "Foundations of Cybersecurity",
+      name: "FCybersecurity",
       description: "Learned the basics of cybersecurity, including risk management and security controls.",
       duration: "Jan 2024 - Mar 2024",
       logo: "ibm", // Use a string to identify the logo
