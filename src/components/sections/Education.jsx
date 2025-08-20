@@ -69,7 +69,7 @@ function Education() {
       <div className="w-full pb-10">
         {/* Mobile: horizontal scroll */}
         <div
-          className="flex flex-nowrap gap-6 px-1 h-48 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent"
+          className="flex flex-nowrap gap-6 px-1 h-56 overflow-x-auto overflow-y-hidden sm:hidden scrollbar-hide bg-transparent"
           style={{
             WebkitOverflowScrolling: "touch",
             scrollbarWidth: "none",
@@ -100,11 +100,18 @@ function Education() {
                   </p>
                 </div>
                 {/* Duration: top right */}
-                <div className="absolute top-3 right-2 flex justify-end w-auto">
-                  <span className="text-[10px] font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-1 py-0.5 rounded shadow">
+                {/* Duration: bottom center for mobile */}
+                <div className="absolute flex sm:hidden bottom-3 left-1/2 -translate-x-1/2 w-full justify-center">
+                  <span className="text-[8px] font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-2 py-1 rounded shadow">
                     {edu.duration}
                   </span>
                 </div>
+               
+                {/* <div className="absolute top-3 right-2 flex justify-end w-auto">
+                  <span className="text-[10px] font-medium uppercase text-orange-500 dark:text-orange-400 bg-white/80 dark:bg-zinc-900/80 px-1 py-0.5 rounded shadow">
+                    {edu.duration}
+                  </span>
+                </div> */}
                 {/* Wave SVG background */}
                 <div className="absolute overflow-hidden top-[-10px] left-0 w-full z-0">
                   <svg
