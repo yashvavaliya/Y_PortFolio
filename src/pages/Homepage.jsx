@@ -57,7 +57,7 @@ function Homepage() {
   // }
 
   return (
-    <div className="bg-zing-100 dark:bg-zinc-900">
+    <div className="bg-zinc-100 dark:bg-zinc-900">
       <div className="xl:w-[1350px] md:mx-auto h-full border-x border-zinc-100 dark:border-zinc-800  bg-zinc-100 dark:bg-zinc-950">
         <ToggleTheme switchTheme={switchTheme} />
 

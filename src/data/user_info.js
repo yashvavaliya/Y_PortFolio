@@ -89,6 +89,15 @@ const info = {
       github: "https://github.com/dsbalico/chatroom",
       link: "https://thechatroom.netlify.app/",
     },
+     {
+      title: "Chatroom",
+      description:
+        "Chatroom is a simple online chatting web application where you can create chat rooms and have a fun conversation with a group of people.",
+      technologies: "React, Tailwind, Firebase",
+       img: "/project/AI_Trip_Planner1.jpg",
+      github: "https://github.com/dsbalico/chatroom",
+      link: "https://thechatroom.netlify.app/",
+    },
 
     {
       title: "Sudoku Solver",

@@ -25,7 +25,10 @@ function Projects() {
   };
 
   return (
-    <section className="mt-[5%] px-0 sm:px-0 md:px-8 mb-10 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[1s]">
+    <section
+      className="mt-[5%] px-0 sm:px-0 md:px-8 mb-10 lg:px-20 w-full max-w-[1400px] mx-auto transition-all duration-[1s]"
+      style={{ fontFamily: "'Poppins', 'Inter', sans-serif" }}
+    >
       {" "}
       {/* Added padding-bottom */}
       <div className="relative py-20 px-2">
@@ -51,16 +54,22 @@ function Projects() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 sm:px-8">
           {/* Left Side: Project Info */}
           <div>
-            <h2
-              className="text-3xl font-bold mb-2 text-orange-600"
-              style={{
+            <div className="flex flex-col items-start mb-2"  style={{
                 fontFamily: "'Playfair Display', 'Poppins', 'Inter', serif, sans-serif",
                 fontWeight: 700,
-              }}
-            >
-              0{currentIndex + 1}/
-              <span className="text-gray-800 dark:text-white">0{total}</span>
-            </h2>
+              }}>
+              <div className="flex items-end" >
+                <span className="text-6xl font-extrabold text-orange-600 leading-none">
+                  0{currentIndex + 1}
+                </span>
+                <span className="text-5xl font-extrabold text-orange-600 mx-2 leading-none">
+                  /
+                </span>
+              </div>
+              <span className="text-base font-medium text-gray-800 dark:text-white mt-1 ml-1">
+                0{total}
+              </span>
+            </div>
 
             {/* Card with easing effect */}
             <div
@@ -79,7 +88,6 @@ function Projects() {
               <p className="mt-4 text-base text-gray-700 dark:text-gray-300">
                 {currentProject.description}
               </p>
-
               <div className="mt-4 space-x-4">
                 {currentProject.github && (
                   <a
@@ -103,6 +111,7 @@ function Projects() {
                 )}
               </div>
             </div>
+            
           </div>
 
           {/* Right Side: Placeholder Image + Navigation */}
